@@ -4,3 +4,6 @@
 #PyCache
 __pycache__/
 *.pyc
+
+#Virtual Environment
+ahc_cnn_venv/
