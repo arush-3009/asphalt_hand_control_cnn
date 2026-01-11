@@ -244,5 +244,36 @@ class DataCollector:
             y_pos += 25
 
 
-
+def handle_key(self, key):
+        """
+        Handle keyboard input
+        Args:
+            key: Key code from cv2.waitKey()
+        Returns:
+            True to continue, False to quit
+        """
+        
+        # Gesture mode selection (1-5)
+        if chr(key) in GESTURES:
+            self.current_gesture = chr(key)
+            self.is_capturing = False  # Stop capturing when switching modes
+            print(f"\n>>> Switched to {GESTURES[chr(key)].upper()} mode")
+            return True
+        
+        # Toggle capturing (SPACE)
+        elif key == 32:  # SPACE key
+            if self.current_gesture:
+                self.is_capturing = not self.is_capturing
+                status = "ON" if self.is_capturing else "OFF"
+                print(f">>> Capturing {status}")
+            else:
+                print(">>> Select a gesture mode first (1-5)")
+            return True
+        
+        # Quit (Q)
+        elif key == ord('q'):
+            print("\n>>> Quitting...")
+            return False
+        
+        return True
 
