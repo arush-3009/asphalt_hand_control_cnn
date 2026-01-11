@@ -63,3 +63,41 @@ def get_hand_bounding_box(landmarks, frame_width, frame_height, padding):
     y_max = min(frame_height, y_max)
 
     return (x_min, y_min, x_max, y_max)
+
+
+def save_image(frame, bbox, saved_img_size, gesture_name, counter):
+    """
+    Crop the hand out of the image, resize to an appropriate size for Model input, and count the number.
+
+    Args:
+    frame: The original image as captured by webcam.
+    bbox: Coordinates of the appropriate path of the images that captures the hand.
+    saved_img_size: The size the final, saved images should be (in pixels).
+    gesture_name: Name of the gesture which the images shows.
+    counter: Number of images saved for the gesture.
+
+    Returns:
+    True if image saved in folder, False otherwise.
+    """
+
+    if bbox in None:
+        return False
+
+    x_min, y_min, x_max, y_max = bbox
+
+    #Crop the path of the image with the hand
+    hand_cropped = frame[y_min:y_max, x_min:x_max]
+    if hand_cropped.size == 0:
+        return False
+    
+    #Resize hand to specified size
+    hand_resized = cv2.resize(hand_cropped, (saved_img_size, saved_img_size))
+
+    file_name = f"{gesture_name}_{counter:04d}.jpg"
+
+    filepath = os.path.join(DATASET_PATH, gesture_name, file_name)
+
+    #Save to disk
+    ret = cv2.imwrite(filepath, hand_resized)
+
+    return ret
