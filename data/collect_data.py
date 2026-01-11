@@ -22,6 +22,25 @@ for gesture_name in GESTURES.values():
     os.makedirs(folder_path, exist_ok=True)
     print(f"Created Folder: {folder_path}")
 
+def count_existing_pictures(folderpath):
+    """
+    This method returns how many pictures already exist in the folder of a specified gesture
+    with the specified folderpath.
+    """
+    if not os.path.exists(folderpath):
+        return 0
+    
+
+    #This returns a python list of all the names inside the folder (here, folderpath)
+    all_names_in_folder = os.listdir(folderpath)
+
+    #Count how many of those names are dataset pictures, i.e. end with ".jpg"
+    curr_count = 0
+    for name in all_names_in_folder:
+        if name.lower().endswith(".jpg"):
+            curr_count += 1
+    
+    return curr_count
 
 #Get bouding box around hands
 def get_hand_bounding_box(landmarks, frame_width, frame_height):
@@ -131,7 +150,8 @@ class DataCollector:
 
         self.counters = {}
         for name in GESTURES.values():
-            self.counters[name] = 0
+            gesture_folder = os.path.join(DATASET_PATH, name)
+            self.counters[name] = count_existing_pictures(gesture_folder)
 
         print("="*60)
         print("Data Collection Ready")
