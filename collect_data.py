@@ -199,6 +199,50 @@ class DataCollector:
         
         self.cleanup()
 
+    
+    def draw_info(self, frame):
+        """Draw UI information on frame"""
+        
+        # Status text
+        y_pos = 30
+        
+        # Current mode
+        if self.current_gesture:
+            mode_text = f"Mode: {GESTURES[self.current_gesture].upper()}"
+            color = (0, 255, 0)
+        else:
+            mode_text = "Mode: NONE (Press 1-5)"
+            color = (0, 0, 255)
+        
+        cv2.putText(frame, mode_text, (10, y_pos), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
+        y_pos += 35
+        
+        # Capture status
+        if self.is_capturing:
+            status_text = "Capturing: ON"
+            status_color = (0, 255, 0)
+        else:
+            status_text = "Capturing: OFF"
+            status_color = (0, 0, 255)
+        
+        cv2.putText(frame, status_text, (10, y_pos), cv2.FONT_HERSHEY_SIMPLEX, 0.7, status_color, 2)
+        y_pos += 35
+        
+        # Current gesture count
+        if self.current_gesture:
+            gesture_name = GESTURES[self.current_gesture]
+            count = self.counters[gesture_name]
+            count_text = f"Count: {count}"
+            cv2.putText(frame, count_text, (10, y_pos), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
+            y_pos += 35
+        
+        # All gesture counts (bottom right)
+        y_pos = frame.shape[0] - 150
+        for name in GESTURES.values():
+            count_text = f"{name}: {self.counters[name]}"
+            cv2.putText(frame, count_text, (frame.shape[1] - 200, y_pos), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200, 200, 200), 1)
+            y_pos += 25
+
 
 
 
