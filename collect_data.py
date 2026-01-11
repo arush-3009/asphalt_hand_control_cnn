@@ -270,7 +270,7 @@ class DataCollector:
                     print(">>> Select a gesture mode first (1-5)")
                 return True
             
-            # Quit (Q)
+            # Quit
             elif key == ord('q'):
                 print("\n>>> Quitting...")
                 return False
@@ -295,7 +295,6 @@ class DataCollector:
         print("="*50)
 
 
-# Main execution
 if __name__ == '__main__':
     try:
         collector = DataCollector((1280, 720))
