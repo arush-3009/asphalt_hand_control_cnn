@@ -101,3 +101,46 @@ def save_image(frame, bbox, saved_img_size, gesture_name, counter):
     ret = cv2.imwrite(filepath, hand_resized)
 
     return ret
+
+
+class DataCollector:
+    """
+    Hand Gesuture Images data collection using the webcam.
+    """
+    def __init__(self, webcam_resolution):
+
+        #Set up webcam
+        camera_w, camera_h = webcam_resolution
+        
+        self.cap = cv2.VideoCapture(0)
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, camera_w)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, camera_h)
+
+        if not self.cap.isOpened():
+            raise RuntimeError("Error: Issue accessing Webcam!")
+
+        #MediaPipe Hand Detection
+        self.hands = mp.solutions.hands.Hands(static_image_mode=False, min_detection_confidence=0.5, min_tracking_confidence=0.5, max_num_hands=1)
+
+        self.mp_draw = mp.solutions.drawing_utils
+
+        #Initialize state machine for tracking
+        self.current_gesture = None
+        self.is_capturing = False
+        self.last_capture_time = 0
+
+        self.counter = {}
+        for name in GESTURES.values():
+            self.counter[name] = 0
+
+        print("="*60)
+        print("Data Collection Ready")
+        print("="*60)
+
+        print("\nPress the following buttons to capture the respective gestures:\n")
+        for key, value in GESTURES.item():
+            print(f"Gesture: {value}  ->  Button: {key}")
+        print(f"\nAdditionally, press:\nSPACE -> Toggle auto-capture\nQ: Quit")
+        print('-'*45)
+
+        
