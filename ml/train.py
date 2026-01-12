@@ -16,13 +16,14 @@ from ml import config
 
 class Train():
 
-    def __init__(self, model, loss_criterion, optimizer, num_epochs, batch_size, device):
+    def __init__(self, model, loss_criterion, optimizer, num_epochs, batch_size, device, batch_print_freq = 5):
         self.model = model
         self.loss_criterion = loss_criterion
         self.optimizer = optimizer
         self.num_epochs = num_epochs
         self.batch_size = batch_size
         self.device = device
+        self.batch_print_freq = batch_print_freq
     
     def set_transformations(self, augmentations_dict, img_size, mean_norm, std_norm):
         """
@@ -64,7 +65,7 @@ class Train():
         print(f"Classes: {validation_dataset.classes}")
         print(f"Class-to-LabelIndex Mapping: {validation_dataset.class_to_idx}")
     
-    def train_one_epoch(self, batch_print_freq):
+    def train_one_epoch(self):
         """
         Defines the training loop for 1 epoch.
         """
@@ -99,7 +100,7 @@ class Train():
             epoch_correct_pred += correct_pred
             epoch_total_pred += total_pred
 
-            if batch_idx % batch_print_freq == 0:
+            if batch_idx % self.batch_print_freq == 0:
                 print(f"\nBatch Index: {batch_idx} ->")
                 print(f"Batch Loss: {loss:.5f}")
                 print(f"Batch Accuracy: {batch_acc}%")
@@ -141,4 +142,20 @@ class Train():
             epoch_acc = (epoch_correct_pred / epoch_total_pred) * 100
         
         return epoch_loss, epoch_acc
+    
+
+    def train_all_epochs(self):
+        """
+        Defines the training loop to train and validate through all epochs.
+        """
+        
+        training_losses = []
+        training_accuracies = []
+        validation_losses = []
+        validation_accuracies = []
+
+        for epoch in range(self.num_epochs):
+            print(f"\nStarting Training for Epoch Number {epoch+1}:")
+
+
             
