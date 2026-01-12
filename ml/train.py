@@ -8,6 +8,7 @@ from torchvision import transforms
 from torchvision.datasets import ImageFolder
 import matplotlib.pyplot as plt
 import numpy as np
+import traceback
 
 
 from ml.model import GestureCNN
@@ -226,3 +227,85 @@ class Train():
         
         plt.close()
 
+
+if __name__ == '__main__':
+    try:
+        print("="*60)
+        print("HAND GESTURE CNN TRAINING")
+        print("="*60)
+        
+        # Create model
+        print("\nInitializing model...")
+        model = GestureCNN().to(config.DEVICE)
+        print(f"Model created and moved to {config.DEVICE}!")
+        
+        #Create loss and optimizer
+        cross_entropy_loss_criterion = nn.CrossEntropyLoss()
+        adam_optimizer = optim.Adam(model.parameters(), lr=config.LEARNING_RATE)
+        
+        #Create trainer
+        print("\nCreating trainer...")
+        trainer = Train(
+            model=model,
+            loss_criterion=cross_entropy_loss_criterion,
+            optimizer=adam_optimizer,
+            num_epochs=config.NUM_EPOCHS,
+            batch_size=config.BATCH_SIZE,
+            device=config.DEVICE,
+            batch_print_freq=config.PRINT_FREQUENCY
+        )
+        print("Trainer initialized!")
+        
+        #Set transforms
+        print("\nSetting up data transformations...")
+        trainer.set_transformations(
+            augmentations_dict=config.AUGMENTATIONS,
+            img_size=config.IMG_SIZE,
+            mean_norm=config.NORMALIZE_MEAN,
+            std_norm=config.NORMALIZE_STD
+        )
+        print("Augmentations configured!")
+
+        #Set data loaders
+        print("\nLoading datasets...")
+        trainer.set_data_loaders(
+            path_to_train=config.TRAIN_DIR,
+            path_to_val=config.VAL_DIR
+        )
+        print(f"Training images: {len(trainer.train_loader.dataset)}")
+        print(f"Validation images: {len(trainer.val_loader.dataset)}")
+        print(f"Batch size: {config.BATCH_SIZE}")
+        print(f"Batches per epoch: {len(trainer.train_loader)}")
+        
+        #Train
+        print("\nStarting training...")
+        print("="*60)
+        
+        model_save_path = config.MODELS_DIR / config.MODEL_SAVE_NAME
+        
+        train_losses, train_accs, val_accs, val_losses = trainer.train_all_epochs(
+            model_save_path=model_save_path
+        )
+        
+        #Plot results
+        print("\nGenerating training curves...")
+        plot_path = config.RESULTS_DIR / 'training_curves.png'
+        trainer.plot_training_curves(
+            train_losses=train_losses,
+            train_accs=train_accs,
+            val_losses=val_losses,
+            val_accs=val_accs,
+            plot_path=plot_path
+        )
+        
+        print("\n" + "="*60)
+        print("TRAINING COMPLETE!")
+        print("="*60)
+        print(f"\nModel saved to: {model_save_path}")
+        print(f"Training curves saved to: {plot_path}")
+        
+    except KeyboardInterrupt:
+        print("\n\nTraining interrupted by user.")
+    except Exception as e:
+        print(f"\n\nError during training: {e}")
+        traceback.print_exc()
