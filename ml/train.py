@@ -157,5 +157,17 @@ class Train():
         for epoch in range(self.num_epochs):
             print(f"\nStarting Training for Epoch Number {epoch+1}:")
 
+            train_loss, train_acc = self.train_one_epoch()
+            val_loss, val_acc = self.validate()
 
+            training_losses.append(train_loss)
+            training_accuracies.append(train_acc)
+            validation_losses.append(val_loss)
+            validation_accuracies.append(val_acc)
+
+            print(f"\nEpoch {epoch+1} Complete!")
+            print(f"Training Accuracy: {train_acc:.5f}")
+            print(f"Validation Accuracy: {val_acc:.5f}")
+        
+        return training_losses, training_accuracies, validation_accuracies, validation_losses
             
