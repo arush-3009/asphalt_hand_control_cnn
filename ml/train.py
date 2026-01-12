@@ -129,5 +129,16 @@ class Train():
                 loss = loss.item()
                 loss += epoch_loss
                 
-                correct_pred = (logit_outputs)
+                output_predictions = torch.argmax(logit_outputs, dim=1)
+
+                correct_pred = (output_predictions == labels).sum().item()
+                total_pred = labels.shape[0]
+
+                epoch_correct_pred += correct_pred
+                epoch_total_pred += total_pred
+
+            epoch_loss /= num_batches
+            epoch_acc = (epoch_correct_pred / epoch_total_pred) * 100
+        
+        return epoch_loss, epoch_acc
             
