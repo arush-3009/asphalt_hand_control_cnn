@@ -78,6 +78,8 @@ class Train():
         num_batches = len(self.train_loader)
 
         for batch_idx, (images, labels) in enumerate(self.train_loader):
+            images = images.to(self.device)
+            labels = labels.to(self.device)
 
             actual_batch_size = labels.shape[0] #As the last batch may have fewer examples.
 
@@ -125,10 +127,12 @@ class Train():
 
         with torch.no_grad():
             for images, labels in self.val_loader:
+                images = images.to(self.device)
+                labels = labels.to(self.device)
                 logit_outputs = self.model(images)
                 loss = self.loss_criterion(logit_outputs, labels)
                 loss = loss.item()
-                loss += epoch_loss
+                epoch_loss += loss
                 
                 output_predictions = torch.argmax(logit_outputs, dim=1)
 
