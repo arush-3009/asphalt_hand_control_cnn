@@ -16,12 +16,12 @@ from ml import config
 
 class Train():
 
-    def __init__(self, model, loss_criterion, optimizer, num_epochs, num_batches, device):
+    def __init__(self, model, loss_criterion, optimizer, num_epochs, batch_size, device):
         self.model = model
         self.loss_criterion = loss_criterion
         self.optimizer = optimizer
         self.num_epochs = num_epochs
-        self.num_batches = num_batches
+        self.batch_size = batch_size
         self.device = device
     
     def set_transformations(self, augmentations_dict, img_size, mean_norm, std_norm):
@@ -42,5 +42,28 @@ class Train():
 
         self.train_transform = train_transformations
         self.val_transform = val_transformations
+
+    def set_data_loaders(self, path_to_train, path_to_val):
+        """
+        Sets the loaders for the training and validation sets and applies transformations.
+        """
+        training_dataset = ImageFolder(root=path_to_train, transform=self.train_transform)
+        validation_dataset = ImageFolder(root=path_to_val, transform=self.val_transform)
+
+        train_loader = DL(dataset=training_dataset, batch_size=self.batch_size, shuffle=True)
+        val_loader = DL(dataset=validation_dataset, batch_size=self.batch_size, shuffle=False)
+
+        self.train_loader = train_loader
+        self.val_loader = val_loader
+
+        print(f"\nDataset Loaders defined.")
+        print(f"Train Dataset:")
+        print(f"Classes: {training_dataset.classes}")
+        print(f"Class-to-idx Mapping: {training_dataset.class_to_idx}")
+        print(f"Validation Dataset:")
+        print(f"Classes: {validation_dataset.classes}")
+        print(f"Class-to-idx Mapping: {validation_dataset.class_to_idx}")
+    
+    
 
 
