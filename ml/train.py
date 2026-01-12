@@ -62,8 +62,46 @@ class Train():
         print(f"Class-to-idx Mapping: {training_dataset.class_to_idx}")
         print(f"Validation Dataset:")
         print(f"Classes: {validation_dataset.classes}")
-        print(f"Class-to-idx Mapping: {validation_dataset.class_to_idx}")
+        print(f"Class-to-LabelIndex Mapping: {validation_dataset.class_to_idx}")
     
-    
+    def train_one_epoch(self, batch_print_freq):
+        """
+        Defines the training loop for 1 epoch.
+        """
+        epoch_loss = 0
+        epoch_correct_pred = 0
+        epoch_total_pred = 0
 
+        num_batches = len(self.train_loader)
+
+        for batch_idx, (images, labels) in enumerate(self.train_loader):
+
+            actual_batch_size = labels.shape[0] #As the last batch may have fewer examples.
+
+            self.optimizer.zero_grad()
+            logit_outputs = self.model(images) #Forward pass
+            loss = self.loss_criterion(logit_outputs, labels) #Calculate batch loss
+            loss.backward() #Backward pass
+            self.optimizer.step() #Update weights
+
+            loss = loss.item()
+            epoch_loss += loss
+            
+            correct_pred = (logit_outputs == labels).sum().item()
+            total_pred = actual_batch_size
+
+            batch_acc = (correct_pred/total_pred) * 100
+
+            epoch_correct_pred += correct_pred
+            epoch_total_pred += total_pred
+
+            if batch_idx % batch_print_freq == 0:
+                print(f"\nBatch Index: {batch_idx} ->")
+                print(f"Batch Loss: {loss:.5f}")
+                print(f"Batch Accuracy: {batch_acc}%")
+        
+        epoch_loss /= num_batches
+        epoch_acc = 100 * (epoch_correct_pred/epoch_total_pred)
+
+        return epoch_loss, epoch_acc
 
