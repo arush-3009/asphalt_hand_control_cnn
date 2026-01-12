@@ -68,3 +68,23 @@ class DataSplitter:
         print(stats_df)
 
         return True
+
+    def create_folders(self):
+        """
+        Create folder structure for train/test/validation sets.
+        """
+
+        self.processed_dir = self.raw_img_dir.parent/"processed"
+        self.train_dir = self.processed_dir/"train"
+        self.test_dir = self.processed_dir/"test"
+        self.val_dir = self.processed_dir/"val"
+
+        for split_dir in (self.train_dir, self.val_dir, self.test_dir):
+            for gesture in self.gestures:
+                gesture_dir = split_dir / gesture
+                gesture_dir.mkdir(parents=True, exist_ok=True)
+        
+        print(f"\nFolder Structure Created\n")
+
+    
+
