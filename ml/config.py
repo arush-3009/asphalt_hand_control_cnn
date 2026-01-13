@@ -74,7 +74,7 @@ PRINT_FREQUENCY = 2  # Print every 2 batches during training
 
 RANDOM_SEED = 42
 
-MODEL_DETECTION_CONFIDENCE = 0.8
+MODEL_DETECTION_CONFIDENCE = 0.5
 
 torch.manual_seed(RANDOM_SEED)
 if torch.cuda.is_available():
