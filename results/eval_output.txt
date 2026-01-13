@@ -1,0 +1,61 @@
+Using device: Apple Silicon GPU (MPS)
+============================================================
+MODEL EVALUATION
+============================================================
+
+Initializing model...
+Model loaded from: /Users/arushhanda/Desktop/Project_asphalt_hand_control_CNN/models/gesture_cnn_best.pth
+
+Setting up transformations...
+
+Loading test dataset...
+
+Test Loader set ->
+Test Dataset Size: 460
+Number of batches: 15
+Classes: ['fist', 'index_pointing', 'no_gesture', 'open_hand', 'v_sign']
+Class-to-LabelIndex Mapping: {'fist': 0, 'index_pointing': 1, 'no_gesture': 2, 'open_hand': 3, 'v_sign': 4}
+
+Running model on test set...
+
+Predictions collected for 460 images.
+
+Calculating metrics...
+
+Metrics calculated
+Confusion matrix generated
+Classification report generated
+
+Confusion matrix plot saved to: /Users/arushhanda/Desktop/Project_asphalt_hand_control_CNN/results/confusion_matrix.png
+
+============================================================
+TEST SET RESULTS
+============================================================
+
+Overall Test Accuracy: 100.00000%
+
+Per-Class Accuracy:
+  fist: 100.000%
+  index_pointing: 100.000%
+  no_gesture: 100.000%
+  open_hand: 100.000%
+  v_sign: 100.000%
+
+Classification Report:
+                precision    recall  f1-score   support
+
+          fist       1.00      1.00      1.00        75
+index_pointing       1.00      1.00      1.00        75
+    no_gesture       1.00      1.00      1.00       103
+     open_hand       1.00      1.00      1.00       108
+        v_sign       1.00      1.00      1.00        99
+
+      accuracy                           1.00       460
+     macro avg       1.00      1.00      1.00       460
+  weighted avg       1.00      1.00      1.00       460
+
+============================================================
+
+============================================================
+EVALUATION COMPLETE!
+============================================================
