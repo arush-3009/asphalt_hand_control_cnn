@@ -2,6 +2,8 @@ from src import camera, config, display, gestures, keyboard_input, tracking
 import time
 import cv2
 
+import ml.config as cnn_config
+
 class GameController:
 
     def __init__(self):
@@ -10,15 +12,18 @@ class GameController:
         self.display = display.DisplayManager(self.configuration)
         self.keyboard_control = keyboard_input.KeyboardController(self.configuration)
         self.hand_tracker = tracking.HandDetector()
-        self.gesture_tracker = gestures.Gestures(self.configuration)
+        self.gesture_tracker = gestures.Gestures(self.configuration, prediction_confidence=cnn_config.MODEL_DETECTION_CONFIDENCE)
 
-    def press_game_keys(self, landmarks):
+    def press_game_keys(self, frame, landmarks):
 
         if landmarks:
-            self.gesture_tracker.is_open(landmarks)
-            self.gesture_tracker.is_fist(landmarks)
-            self.gesture_tracker.is_v(landmarks)
-            self.gesture_tracker.is_index_pointing(landmarks)
+
+            bbox = self.hand_tracker.get_hand_bounding_box(frame)
+
+            #Classify the gesture using the CNN model
+            if bbox is not None:
+                self.gesture_tracker.classify_gesture_cnn(frame, bbox)
+            #Use mediapipe to get the steering directions
             self.gesture_tracker.get_steering_direction(landmarks)
             self.gesture_tracker.get_hand_position(landmarks)
         
@@ -56,7 +61,7 @@ class GameController:
             frame = self.hand_tracker.find_hands(frame, draw=False)
             landmarks = self.hand_tracker.find_pos(frame)
 
-            self.press_game_keys(landmarks)
+            self.press_game_keys(frame, landmarks)
 
             curr_time = time.time()
             fps = int(1 / (curr_time - prev_time)) if prev_time > 0 else 0
