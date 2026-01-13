@@ -8,11 +8,13 @@ import ml.config as config
 
 class GesturePredictor():
 
-    def __init__(self, model, path_to_trained_model, mean_norm, std_norm, device, img_size):
+    def __init__(self, model, path_to_trained_model, mean_norm, std_norm, device, img_size, class_names):
 
         self.model = model
         self.device = device
         self.model.load_state_dict(torch.load(path_to_trained_model, map_location=self.device))
+        self.model.to(self.device)
+        self.model.eval()
 
         transformation = transforms.Compose([
             transforms.ToTensor(),
@@ -21,6 +23,8 @@ class GesturePredictor():
 
         self.transformation = transformation
         self.img_size = img_size
+
+        self.class_names = class_names
     
     def preprocess_image(self, frame, bbox):
         """
