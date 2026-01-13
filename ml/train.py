@@ -9,6 +9,7 @@ from torchvision.datasets import ImageFolder
 import matplotlib.pyplot as plt
 import numpy as np
 import traceback
+import pandas as pd
 
 
 from ml.model import GestureCNN
@@ -189,6 +190,18 @@ class Train():
         print(f"Best Validation Accuracy: {best_val_acc:.3f}%")
         print(f"Best Epoch: {best_epoch}")
         print(f"Model saved to: {model_save_path}")
+
+        stats = {
+            "Training Losses": training_losses,
+            "Training Accuracies": training_accuracies,
+            "Validation Losses": validation_losses,
+            "Validation Accuracies": validation_accuracies
+        }
+
+        stats_df = pd.DataFrame(stats)
+        stats_df.index.name = "Epoch"
+
+        print(f"\nTraining Summary:\n\n{stats_df}")
 
         return training_losses, training_accuracies, validation_accuracies, validation_losses
 
