@@ -35,5 +35,6 @@ class GesturePredictor():
         ])
 
         tensor = transformation(pil_image)
+        tensor = tensor.unsqueeze(0) #As the model expects the batch dimension too
+        tensor = tensor.to(self.device)
         return tensor
-        
