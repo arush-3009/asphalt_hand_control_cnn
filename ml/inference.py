@@ -47,14 +47,6 @@ class GesturePredictor():
         tensor = tensor.to(self.device)
         return tensor
 
-    def softmax(self, logit_tensor):
-        """
-        Convert a tensor of logits (raw) to probabilities.
-        """
-        exp_tensor = torch.exp(logit_tensor)
-        total_exp = exp_tensor.sum()
-        return exp_tensor/total_exp
-
     def predict(self, frame, bbox):
         """
         Get gesture prediction with confidence.
