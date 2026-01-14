@@ -10,7 +10,7 @@ Real-time hand gesture recognition system for controlling racing games using dee
 
 This project implements an end-to-end machine learning pipeline using, mainly a custom, from scratch, Convolutional Neural Network and a custom self-procured dataset for real-time hand gesture recognition, enabling touchless game control through a webcam. The system uses MediaPipe for hand tracking and a custom CNN for gesture classification, achieving **99.5% accuracy** on a diverse dataset.
 
-## ✨ Features
+## Features
 
 - **5 Gesture Recognition**: Open hand, fist, V-sign, index pointing, and no gesture
 - **Real-time Inference**: <50ms latency per frame with GPU acceleration
@@ -28,7 +28,7 @@ This project implements an end-to-end machine learning pipeline using, mainly a 
 | ☝️ Index finger | Nitro | N |
 | 👈👉 Hand position | Steer | A/D |
 
-## 📊 Performance
+## Performance
 
 - **Test Accuracy**: 99.46%
 - **Training Dataset**: 4,983 images across 5 gestures
@@ -85,7 +85,7 @@ pip install opencv-python mediapipe
 pip install pynput scikit-learn matplotlib pandas pyyaml pillow
 ```
 
-## 💻 Usage
+## Usage
 
 ### Run Game Control
 ```bash
@@ -108,7 +108,7 @@ python -m ml.evaluate
 python -m data.collect_data
 ```
 
-## 📁 Project Structure
+## Project Structure
 ```
 Project_asphalt_hand_control_CNN/
 ├── ml/                          # Machine learning module
@@ -141,7 +141,7 @@ Project_asphalt_hand_control_CNN/
 └── README.md
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `config.yml` to customize:
 ```yaml
@@ -161,7 +161,7 @@ display:
   show_gesture_table: true
 ```
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Data Augmentation
 - Random rotation (±15°)
@@ -180,7 +180,7 @@ display:
 - Saves best model based on validation accuracy
 - Early stopping after 10 epochs without improvement
 
-## 📈 Results
+## Results
 
 ### Training Curves
 ![Training Curves](results/training_curves.png)
@@ -188,7 +188,7 @@ display:
 ### Confusion Matrix
 ![Confusion Matrix](results/confusion_matrix.png)
 
-## 🎯 Future Improvements
+## Planned/Ongoing Improvements
 
 - [ ] Multi-hand gesture support
 - [ ] Transfer learning (MobileNetV3) for mobile deployment
@@ -198,7 +198,7 @@ display:
 - [ ] Voice feedback integration
 - [ ] Gesture customization UI
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Low FPS
 - Reduce camera resolution in `config.yml`
@@ -215,7 +215,7 @@ display:
 - Run `python -m ml.train` to train model
 - Ensure `models/gesture_cnn_best.pth` exists
 
-## 📚 Technologies Used
+## Technologies Used
 
 - **PyTorch**: Deep learning framework
 - **MediaPipe**: Hand tracking and landmark detection
@@ -234,11 +234,11 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Arush Handa**
 - GitHub: [@arush-3009](https://github.com/arush-3009)
