@@ -1,162 +1,247 @@
-# Hand Gesture Game Control
+# Hand Gesture Game Control with CNN
 
-> Control games using computer vision and hand gestures!
+Real-time hand gesture recognition system for controlling racing games using deep learning and computer vision.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 📖 Overview
+## 🎮 Overview
 
-A Python application that uses computer vision to detect hand gestures via webcam and translates them into keyboard controls for games like Asphalt 8.
+This project implements an end-to-end machine learning pipeline for real-time hand gesture recognition, enabling touchless game control through a webcam. The system uses MediaPipe for hand tracking and a custom CNN for gesture classification, achieving **99.5% accuracy** on a diverse dataset.
 
-### Key Features
+## ✨ Features
 
-- **Real-time Hand Detection** - MediaPipe-powered hand tracking at ~30 FPS
-- **5 Gesture Controls** - Open hand, fist, V-sign, index pointing, steering
-- **Adaptive Smoothing** - Anti-flicker algorithm for stable controls
-- **Dual Display Modes** - Webcam view or minimal info overlay
-- **Configurable** - YAML-based settings for easy customization
+- **5 Gesture Recognition**: Open hand, fist, V-sign, index pointing, and no gesture
+- **Real-time Inference**: <50ms latency per frame with GPU acceleration
+- **Robust Detection**: Works across different users, lighting conditions, and backgrounds
+- **Configurable Controls**: YAML-based configuration for easy customization
+- **Visual Feedback**: Live display with gesture detection, FPS counter, and control indicators
 
-## 🎯 Gestures
+## 🎯 Gestures & Controls
 
-| Gesture               | Action            | Key |
-|-----------------------|-------------------|-----|
-| ✋ Open Hand          | Accelerate        |  W  |
-| ✊ Fist (hold 1.5s)   | Brake → Reverse   |  S  |
-| V Sign                | Drift             |  S  |
-| Point Index           | Nitro Boost       |  N  |
-| 👈👉 Hand Left/Right  | Steer             | A/D |
+| Gesture | Game Action | Key Binding |
+|---------|-------------|-------------|
+| ✋ Open hand | Accelerate | W |
+| ✊ Fist | Brake/Reverse | S |
+| ✌️ V-sign | Drift | S |
+| ☝️ Index finger | Nitro | N |
+| 👈👉 Hand position | Steer | A/D |
 
-## Quick Start
+## 📊 Performance
 
-### Prerequisites
+- **Test Accuracy**: 99.46%
+- **Training Dataset**: 4,983 images across 5 gestures
+- **Inference Time**: ~30-40ms per frame on Apple M-series GPU
+- **FPS**: 25-35 in real-time operation
 
-- Python 3.8 to 3.11
-- Webcam
-- Racing game with WASD+N controls
+### Per-Class Accuracy
+- Fist: 100%
+- Index Pointing: 100%
+- Open Hand: 99.4%
+- V-Sign: 99.4%
+- No Gesture: 98.4%
 
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/arush-3009/hand-gesture-game-control.git
-cd hand-gesture-game-control
+## 🏗️ Architecture
 
-# Install dependencies
-pip install -r requirements.txt
+### CNN Model
+- **Input**: 224×224 RGB images
+- **Architecture**: 3 convolutional blocks (32→64→128 filters)
+- **Regularization**: Batch normalization + Dropout (0.5)
+- **Parameters**: 12.9M trainable parameters
+- **Output**: 5-class softmax classification
 
-# Run application
-python main.py
+### Pipeline
+```
+Camera Feed → MediaPipe Hand Detection → Bounding Box Extraction 
+→ CNN Classification → Keyboard Control → Game Input
 ```
 
-### First Use
+## 🚀 Installation
 
-1. Position yourself in front of webcam
-2. Run `python main.py`
-3. Wait for window to open
-4. Launch your racing game
-5. Show gestures to control!
+### Prerequisites
+- Python 3.8+
+- Webcam
+- macOS/Windows/Linux
 
-Press `q` to quit.
+### Setup
+
+1. **Clone repository**
+```bash
+git clone https://github.com/yourusername/hand-gesture-game-control.git
+cd hand-gesture-game-control
+```
+
+2. **Create virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**
+```bash
+pip install torch torchvision
+pip install opencv-python mediapipe
+pip install pynput scikit-learn matplotlib pandas pyyaml pillow
+```
+
+## 💻 Usage
+
+### Run Game Control
+```bash
+python main.py
+```
+- Press **Q** to quit
+
+### Train Model
+```bash
+python -m ml.train
+```
+
+### Evaluate Model
+```bash
+python -m ml.evaluate
+```
+
+### Collect Training Data
+```bash
+python -m data.collect_data
+```
+
+## 📁 Project Structure
+```
+Project_asphalt_hand_control_CNN/
+├── ml/                          # Machine learning module
+│   ├── config.py               # ML hyperparameters & paths
+│   ├── model.py                # CNN architecture
+│   ├── train.py                # Training pipeline
+│   ├── evaluate.py             # Evaluation & metrics
+│   └── inference.py            # Real-time prediction
+├── src/                         # Game control module
+│   ├── camera.py               # Webcam interface
+│   ├── tracking.py             # MediaPipe hand detection
+│   ├── gestures.py             # Gesture classification
+│   ├── keyboard_input.py       # Keyboard control
+│   ├── display.py              # Visual feedback
+│   ├── game_control.py         # Main controller
+│   └── config.py               # App configuration
+├── data/                        # Dataset
+│   ├── dataset/
+│   │   ├── raw/               # Original images
+│   │   └── processed/         # Train/val/test split
+│   ├── collect_data.py        # Data collection script
+│   └── split_data.py          # Dataset splitting
+├── models/                      # Saved models
+│   └── gesture_cnn_best.pth   # Trained model weights
+├── results/                     # Training outputs
+│   ├── confusion_matrix.png
+│   └── training_curves.png
+├── config.yml                   # App settings
+├── main.py                      # Entry point
+└── README.md
+```
 
 ## ⚙️ Configuration
 
 Edit `config.yml` to customize:
 ```yaml
-# Steering sensitivity (0.0 = left edge, 1.0 = right edge)
+camera:
+  width: 640
+  height: 480
+
 gestures:
-  left_threshold: 0.4   # Hand left of 40% = steer left
-  right_threshold: 0.6  # Hand right of 60% = steer right
-  smoothing_threshold: 3  # Higher = more stable, lower = more responsive
+  left_threshold: 0.4          # Steering sensitivity
+  right_threshold: 0.6
+  smoothing_threshold: 3       # Control stability
+  bounding_box_padding: 15     # Hand crop padding
 
-# Display mode
 display:
-  mode: "webcam"  # or "info_only" for better performance
+  mode: "webcam"               # "webcam" or "info_only"
+  show_fps: true
+  show_gesture_table: true
 ```
 
-## Display Modes
+## 🔧 Technical Details
 
-### Webcam Mode
-- See your hand and camera feed
-- Gesture labels overlaid
-- Best for learning gestures
+### Data Augmentation
+- Random rotation (±15°)
+- Horizontal flip (50% probability)
+- Random crop with padding
+- **Color jitter** (brightness ±40%, contrast ±40%)
 
-### Info Only Mode (Recommended for Gaming)
-- Black background with minimal info
-- Lower latency (~10-15ms faster)
-- Steering visualization
-- Best for competitive play
+### Training Configuration
+- **Optimizer**: Adam (lr=0.001)
+- **Loss**: Cross-entropy
+- **Batch size**: 64
+- **Epochs**: 20
+- **Device**: GPU (MPS/CUDA) with CPU fallback
 
-## Supported Games
+### Model Checkpointing
+- Saves best model based on validation accuracy
+- Early stopping after 10 epochs without improvement
 
-Tested with:
-- ✅ Asphalt 8: Airborne
-- ✅ Asphalt 9: Legends
-- ✅ Any game using WASD + N controls
+## 📈 Results
 
-## Architecture
-```
-Project/
-├── src/
-│   ├── camera.py          # Webcam management
-│   ├── config.py          # Configuration loader
-│   ├── display.py         # Visual feedback system
-│   ├── gestures.py        # Gesture detection algorithms
-│   ├── keyboard_input.py  # Keyboard control + smoothing
-│   ├── tracking.py        # MediaPipe hand tracking
-│   └── game_control.py    # Main game loop coordinator
-├── main.py                # Entry point
-└── config.yml             # Settings
-```
+### Training Curves
+![Training Curves](results/training_curves.png)
 
-## How It Works
+### Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
 
-1. **MediaPipe** detects 21 hand landmarks per frame
-2. **Gesture algorithms** analyze landmark positions and ratios
-3. **Smoothing filter** prevents flicker from brief detection failures
-4. **Keyboard controller** simulates keypresses via pynput
-5. **Display system** provides real-time visual feedback
+## 🎯 Future Improvements
 
-### Gesture Detection Example
-```python
-# Open hand detection: All fingertips far from wrist
-fingertip_distances = [tip - wrist for tip in fingertips]
-is_open = all(distance > threshold * hand_size)
-```
+- [ ] Multi-hand gesture support
+- [ ] Transfer learning (MobileNetV3) for mobile deployment
+- [ ] Temporal smoothing with LSTM
+- [ ] Web app deployment (Streamlit/Flask)
+- [ ] Support for additional games/applications
+- [ ] Voice feedback integration
+- [ ] Gesture customization UI
 
-## Technical Highlights
+## 🐛 Troubleshooting
 
-- **Object-Oriented Design** - Clean separation of concerns
-- **Config-Driven** - YAML configuration with safe defaults
-- **Resource Management** - Proper cleanup with context managers
-- **Error Handling** - Graceful failure with user feedback
-- **Performance** - 30+ FPS with minimal CPU usage
+### Low FPS
+- Reduce camera resolution in `config.yml`
+- Ensure GPU acceleration is enabled
+- Close background applications
 
-## Troubleshooting
+### Gestures Not Detected
+- Increase lighting
+- Move hand closer to camera
+- Lower `MODEL_DETECTION_CONFIDENCE` in `ml/config.py`
+- Reduce `bounding_box_padding` in `config.yml`
 
-**Gestures not detected?**
-- Ensure good lighting
-- Keep hand 1-2 feet from camera
-- Avoid cluttered background
+### Model Not Found
+- Run `python -m ml.train` to train model
+- Ensure `models/gesture_cnn_best.pth` exists
 
-**Controls laggy?**
-- Switch to `info_only` mode in config
-- Close other apps using webcam
-- Reduce `smoothing_threshold` to 2
+## 📚 Technologies Used
 
-**Keys not registering in game?**
-- Run as administrator (Windows)
-- Check game is focused
-- Verify game uses WASD+N controls
+- **PyTorch**: Deep learning framework
+- **MediaPipe**: Hand tracking and landmark detection
+- **OpenCV**: Image processing and video capture
+- **scikit-learn**: Evaluation metrics
+- **pynput**: Keyboard control simulation
+- **matplotlib**: Visualization
+- **pandas**: Data analysis
 
-## Future Enhancements
+## Contributing
 
-- [ ] Two-hand mode (separate steering/controls)
-- [ ] Machine learning for custom gestures
-- [ ] Multi-game profiles
-- [ ] Gesture calibration wizard
-- [ ] Performance statistics dashboard
+Contributions welcome! Please:
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
+## 📄 License
 
-## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-MIT License - see [LICENSE](LICENSE) file for details
+## 👤 Author
+
+**Arush Handa**
+- GitHub: [@arush-3009](https://github.com/arush-3009)
+- LinkedIn: [Arush Handa](https://www.linkedin.com/in/arush-handa-30b6a7241/)
+- Email: a4handa@uwaterloo.ca
+
