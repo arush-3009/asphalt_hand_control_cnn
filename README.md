@@ -8,7 +8,7 @@ Real-time hand gesture recognition system for controlling racing games using dee
 
 ## Overview
 
-This project implements an end-to-end machine learning pipeline using, mainly a custom, from scratch, Convolutional Neural Network and a custom self-procured dataset for real-time hand gesture recognition, enabling touchless game control through a webcam. The system uses MediaPipe for hand tracking and a custom CNN for gesture classification, achieving **99.5% accuracy** on a diverse dataset.
+This project implements an end-to-end machine learning pipeline using, mainly a custom, from scratch, Convolutional Neural Network and a custom self-procured dataset for real-time hand gesture recognition, enabling touchless game control through a webcam. The system uses MediaPipe for hand tracking and a CNN for gesture classification, achieving **99.5% accuracy** on a diverse dataset.
 
 ## Features
 
