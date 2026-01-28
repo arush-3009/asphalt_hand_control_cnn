@@ -126,6 +126,9 @@ Project_asphalt_hand_control_CNN/
 │   └── gesture_cnn_best.pth   # Trained model weights
 ├── results/                     # Training outputs
 │   ├── confusion_matrix.png
+│   ├── eval_output.txt
+│   ├── split_data_to_train_test_val.txt
+│   ├── train_output.txt
 │   └── training_curves.png
 ├── config.yml                   # App settings
 ├── main.py                      # Entry point
