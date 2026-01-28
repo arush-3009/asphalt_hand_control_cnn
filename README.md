@@ -172,7 +172,6 @@ display:
 
 ### Model Checkpointing
 - Saves best model based on validation accuracy
-- Early stopping after 10 epochs without improvement
 
 ## Results
 
