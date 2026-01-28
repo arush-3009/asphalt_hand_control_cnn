@@ -30,17 +30,10 @@ This project implements an end-to-end machine learning pipeline using, mainly a 
 
 ## Performance
 
-- **Test Accuracy**: 99.46%
-- **Training Dataset**: 4,983 images across 5 gestures
+- **Test Accuracy**: 99.79%
+- **Dataset Images Collected**: 6,500 images across 5 gestures, then split into train/test/validation datasets.
 - **Inference Time**: ~30-40ms per frame on Apple M-series GPU
 - **FPS**: 25-35 in real-time operation
-
-### Per-Class Accuracy
-- Fist: 100%
-- Index Pointing: 100%
-- Open Hand: 99.4%
-- V-Sign: 99.4%
-- No Gesture: 98.4%
 
 ## Architecture
 
