@@ -21,10 +21,10 @@ Class-to-idx Mapping: {'fist': 0, 'index_pointing': 1, 'no_gesture': 2, 'open_ha
 Validation Dataset:
 Classes: ['fist', 'index_pointing', 'no_gesture', 'open_hand', 'v_sign']
 Class-to-LabelIndex Mapping: {'fist': 0, 'index_pointing': 1, 'no_gesture': 2, 'open_hand': 3, 'v_sign': 4}
-Training images: 3472
-Validation images: 763
+Training images: 4530
+Validation images: 995
 Batch size: 64
-Batches per epoch: 55
+Batches per epoch: 71
 
 Starting training...
 ============================================================
@@ -32,2404 +32,3048 @@ Starting training...
 Starting Training for Epoch Number 1:
 
 Batch Index: 0 ->
-Batch Loss: 1.72806
+Batch Loss: 1.73436
 Batch Accuracy: 18.75%
 
 Batch Index: 2 ->
-Batch Loss: 1.66901
-Batch Accuracy: 35.9375%
+Batch Loss: 1.75043
+Batch Accuracy: 25.0%
 
 Batch Index: 4 ->
-Batch Loss: 1.51879
-Batch Accuracy: 45.3125%
+Batch Loss: 1.39110
+Batch Accuracy: 39.0625%
 
 Batch Index: 6 ->
-Batch Loss: 1.44017
-Batch Accuracy: 37.5%
+Batch Loss: 1.41455
+Batch Accuracy: 43.75%
 
 Batch Index: 8 ->
-Batch Loss: 1.35017
-Batch Accuracy: 37.5%
+Batch Loss: 1.22271
+Batch Accuracy: 56.25%
 
 Batch Index: 10 ->
-Batch Loss: 1.20473
-Batch Accuracy: 51.5625%
+Batch Loss: 1.07197
+Batch Accuracy: 56.25%
 
 Batch Index: 12 ->
-Batch Loss: 1.17141
-Batch Accuracy: 51.5625%
+Batch Loss: 1.01789
+Batch Accuracy: 60.9375%
 
 Batch Index: 14 ->
-Batch Loss: 0.99844
-Batch Accuracy: 59.375%
-
-Batch Index: 16 ->
-Batch Loss: 1.02932
+Batch Loss: 1.01318
 Batch Accuracy: 62.5%
 
+Batch Index: 16 ->
+Batch Loss: 0.93960
+Batch Accuracy: 65.625%
+
 Batch Index: 18 ->
-Batch Loss: 1.00687
-Batch Accuracy: 70.3125%
+Batch Loss: 1.00876
+Batch Accuracy: 59.375%
 
 Batch Index: 20 ->
-Batch Loss: 0.91605
-Batch Accuracy: 64.0625%
+Batch Loss: 0.84480
+Batch Accuracy: 67.1875%
 
 Batch Index: 22 ->
-Batch Loss: 0.88469
-Batch Accuracy: 68.75%
+Batch Loss: 0.88926
+Batch Accuracy: 70.3125%
 
 Batch Index: 24 ->
-Batch Loss: 0.71889
-Batch Accuracy: 81.25%
+Batch Loss: 0.81340
+Batch Accuracy: 73.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.70741
-Batch Accuracy: 81.25%
+Batch Loss: 0.83693
+Batch Accuracy: 70.3125%
 
 Batch Index: 28 ->
-Batch Loss: 0.64526
-Batch Accuracy: 84.375%
+Batch Loss: 0.66966
+Batch Accuracy: 79.6875%
 
 Batch Index: 30 ->
-Batch Loss: 0.67805
-Batch Accuracy: 78.125%
+Batch Loss: 0.68568
+Batch Accuracy: 79.6875%
 
 Batch Index: 32 ->
-Batch Loss: 0.57412
+Batch Loss: 0.62535
 Batch Accuracy: 82.8125%
 
 Batch Index: 34 ->
-Batch Loss: 0.58901
-Batch Accuracy: 82.8125%
+Batch Loss: 0.74689
+Batch Accuracy: 70.3125%
 
 Batch Index: 36 ->
-Batch Loss: 0.66673
-Batch Accuracy: 76.5625%
+Batch Loss: 0.66192
+Batch Accuracy: 79.6875%
 
 Batch Index: 38 ->
-Batch Loss: 0.63166
-Batch Accuracy: 76.5625%
+Batch Loss: 0.52734
+Batch Accuracy: 85.9375%
 
 Batch Index: 40 ->
-Batch Loss: 0.60560
-Batch Accuracy: 82.8125%
+Batch Loss: 0.73284
+Batch Accuracy: 75.0%
 
 Batch Index: 42 ->
-Batch Loss: 0.56292
-Batch Accuracy: 81.25%
+Batch Loss: 0.52013
+Batch Accuracy: 84.375%
 
 Batch Index: 44 ->
-Batch Loss: 0.57002
-Batch Accuracy: 87.5%
+Batch Loss: 0.56414
+Batch Accuracy: 81.25%
 
 Batch Index: 46 ->
-Batch Loss: 0.64356
-Batch Accuracy: 78.125%
+Batch Loss: 0.55163
+Batch Accuracy: 87.5%
 
 Batch Index: 48 ->
-Batch Loss: 0.44304
-Batch Accuracy: 90.625%
+Batch Loss: 0.53656
+Batch Accuracy: 78.125%
 
 Batch Index: 50 ->
-Batch Loss: 0.53523
+Batch Loss: 0.47646
 Batch Accuracy: 85.9375%
 
 Batch Index: 52 ->
-Batch Loss: 0.58629
-Batch Accuracy: 81.25%
+Batch Loss: 0.43616
+Batch Accuracy: 89.0625%
 
 Batch Index: 54 ->
-Batch Loss: 0.69546
-Batch Accuracy: 68.75%
+Batch Loss: 0.49104
+Batch Accuracy: 84.375%
+
+Batch Index: 56 ->
+Batch Loss: 0.52429
+Batch Accuracy: 81.25%
+
+Batch Index: 58 ->
+Batch Loss: 0.42696
+Batch Accuracy: 84.375%
+
+Batch Index: 60 ->
+Batch Loss: 0.54585
+Batch Accuracy: 81.25%
+
+Batch Index: 62 ->
+Batch Loss: 0.47013
+Batch Accuracy: 82.8125%
+
+Batch Index: 64 ->
+Batch Loss: 0.44467
+Batch Accuracy: 82.8125%
+
+Batch Index: 66 ->
+Batch Loss: 0.51966
+Batch Accuracy: 76.5625%
+
+Batch Index: 68 ->
+Batch Loss: 0.48035
+Batch Accuracy: 84.375%
+
+Batch Index: 70 ->
+Batch Loss: 0.39280
+Batch Accuracy: 88.0%
 
 Epoch 1 Complete!
-Training Accuracy: 67.62673
-Validation Accuracy: 94.88860
+Training Accuracy: 72.62693
+Validation Accuracy: 93.36683
 
-NEW BEST MODEL SAVED - Validation Accuracy: 94.88860
+NEW BEST MODEL SAVED - Validation Accuracy: 93.36683
 
 Starting Training for Epoch Number 2:
 
 Batch Index: 0 ->
-Batch Loss: 0.38532
-Batch Accuracy: 92.1875%
+Batch Loss: 0.52816
+Batch Accuracy: 84.375%
 
 Batch Index: 2 ->
-Batch Loss: 0.43849
-Batch Accuracy: 92.1875%
+Batch Loss: 0.35517
+Batch Accuracy: 90.625%
 
 Batch Index: 4 ->
-Batch Loss: 0.49620
-Batch Accuracy: 89.0625%
+Batch Loss: 0.39800
+Batch Accuracy: 87.5%
 
 Batch Index: 6 ->
-Batch Loss: 0.47144
-Batch Accuracy: 85.9375%
+Batch Loss: 0.37657
+Batch Accuracy: 89.0625%
 
 Batch Index: 8 ->
-Batch Loss: 0.37521
-Batch Accuracy: 95.3125%
+Batch Loss: 0.36293
+Batch Accuracy: 89.0625%
 
 Batch Index: 10 ->
-Batch Loss: 0.35091
-Batch Accuracy: 93.75%
+Batch Loss: 0.39040
+Batch Accuracy: 87.5%
 
 Batch Index: 12 ->
-Batch Loss: 0.45477
+Batch Loss: 0.36816
 Batch Accuracy: 89.0625%
 
 Batch Index: 14 ->
-Batch Loss: 0.28216
-Batch Accuracy: 96.875%
-
-Batch Index: 16 ->
-Batch Loss: 0.47787
+Batch Loss: 0.41248
 Batch Accuracy: 84.375%
 
+Batch Index: 16 ->
+Batch Loss: 0.23865
+Batch Accuracy: 98.4375%
+
 Batch Index: 18 ->
-Batch Loss: 0.34581
-Batch Accuracy: 92.1875%
+Batch Loss: 0.39370
+Batch Accuracy: 87.5%
 
 Batch Index: 20 ->
-Batch Loss: 0.33789
-Batch Accuracy: 89.0625%
+Batch Loss: 0.33812
+Batch Accuracy: 93.75%
 
 Batch Index: 22 ->
-Batch Loss: 0.34496
-Batch Accuracy: 90.625%
+Batch Loss: 0.40803
+Batch Accuracy: 89.0625%
 
 Batch Index: 24 ->
-Batch Loss: 0.38219
+Batch Loss: 0.34300
 Batch Accuracy: 89.0625%
 
 Batch Index: 26 ->
-Batch Loss: 0.28262
-Batch Accuracy: 93.75%
+Batch Loss: 0.30838
+Batch Accuracy: 92.1875%
 
 Batch Index: 28 ->
-Batch Loss: 0.32488
-Batch Accuracy: 92.1875%
+Batch Loss: 0.31709
+Batch Accuracy: 87.5%
 
 Batch Index: 30 ->
-Batch Loss: 0.29166
-Batch Accuracy: 92.1875%
+Batch Loss: 0.40870
+Batch Accuracy: 89.0625%
 
 Batch Index: 32 ->
-Batch Loss: 0.38605
-Batch Accuracy: 84.375%
+Batch Loss: 0.30841
+Batch Accuracy: 90.625%
 
 Batch Index: 34 ->
-Batch Loss: 0.31152
+Batch Loss: 0.30233
 Batch Accuracy: 90.625%
 
 Batch Index: 36 ->
-Batch Loss: 0.28752
-Batch Accuracy: 92.1875%
+Batch Loss: 0.27070
+Batch Accuracy: 93.75%
 
 Batch Index: 38 ->
-Batch Loss: 0.25695
-Batch Accuracy: 95.3125%
+Batch Loss: 0.46455
+Batch Accuracy: 85.9375%
 
 Batch Index: 40 ->
-Batch Loss: 0.28444
-Batch Accuracy: 93.75%
-
-Batch Index: 42 ->
-Batch Loss: 0.28730
-Batch Accuracy: 93.75%
-
-Batch Index: 44 ->
-Batch Loss: 0.33818
+Batch Loss: 0.33321
 Batch Accuracy: 90.625%
 
+Batch Index: 42 ->
+Batch Loss: 0.33860
+Batch Accuracy: 87.5%
+
+Batch Index: 44 ->
+Batch Loss: 0.26254
+Batch Accuracy: 93.75%
+
 Batch Index: 46 ->
-Batch Loss: 0.21943
-Batch Accuracy: 98.4375%
+Batch Loss: 0.34342
+Batch Accuracy: 90.625%
 
 Batch Index: 48 ->
-Batch Loss: 0.36574
-Batch Accuracy: 89.0625%
+Batch Loss: 0.45195
+Batch Accuracy: 87.5%
 
 Batch Index: 50 ->
-Batch Loss: 0.20929
-Batch Accuracy: 95.3125%
+Batch Loss: 0.18539
+Batch Accuracy: 96.875%
 
 Batch Index: 52 ->
-Batch Loss: 0.29163
+Batch Loss: 0.34854
 Batch Accuracy: 92.1875%
 
 Batch Index: 54 ->
-Batch Loss: 0.18270
-Batch Accuracy: 100.0%
+Batch Loss: 0.33342
+Batch Accuracy: 90.625%
+
+Batch Index: 56 ->
+Batch Loss: 0.32457
+Batch Accuracy: 92.1875%
+
+Batch Index: 58 ->
+Batch Loss: 0.29976
+Batch Accuracy: 93.75%
+
+Batch Index: 60 ->
+Batch Loss: 0.27020
+Batch Accuracy: 89.0625%
+
+Batch Index: 62 ->
+Batch Loss: 0.29649
+Batch Accuracy: 87.5%
+
+Batch Index: 64 ->
+Batch Loss: 0.21739
+Batch Accuracy: 95.3125%
+
+Batch Index: 66 ->
+Batch Loss: 0.23833
+Batch Accuracy: 93.75%
+
+Batch Index: 68 ->
+Batch Loss: 0.45842
+Batch Accuracy: 79.6875%
+
+Batch Index: 70 ->
+Batch Loss: 0.28013
+Batch Accuracy: 92.0%
 
 Epoch 2 Complete!
-Training Accuracy: 90.66820
-Validation Accuracy: 97.37877
+Training Accuracy: 90.64018
+Validation Accuracy: 96.78392
 
-NEW BEST MODEL SAVED - Validation Accuracy: 97.37877
+NEW BEST MODEL SAVED - Validation Accuracy: 96.78392
 
 Starting Training for Epoch Number 3:
 
 Batch Index: 0 ->
-Batch Loss: 0.21594
-Batch Accuracy: 95.3125%
+Batch Loss: 0.18384
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.21510
-Batch Accuracy: 95.3125%
+Batch Loss: 0.26629
+Batch Accuracy: 93.75%
 
 Batch Index: 4 ->
-Batch Loss: 0.34147
-Batch Accuracy: 89.0625%
+Batch Loss: 0.28707
+Batch Accuracy: 93.75%
 
 Batch Index: 6 ->
-Batch Loss: 0.23013
-Batch Accuracy: 92.1875%
+Batch Loss: 0.21544
+Batch Accuracy: 95.3125%
 
 Batch Index: 8 ->
-Batch Loss: 0.23859
-Batch Accuracy: 90.625%
+Batch Loss: 0.33501
+Batch Accuracy: 85.9375%
 
 Batch Index: 10 ->
-Batch Loss: 0.22528
+Batch Loss: 0.20428
 Batch Accuracy: 95.3125%
 
 Batch Index: 12 ->
-Batch Loss: 0.25440
-Batch Accuracy: 95.3125%
+Batch Loss: 0.13704
+Batch Accuracy: 96.875%
 
 Batch Index: 14 ->
-Batch Loss: 0.24300
+Batch Loss: 0.21484
 Batch Accuracy: 93.75%
 
 Batch Index: 16 ->
-Batch Loss: 0.39267
-Batch Accuracy: 81.25%
+Batch Loss: 0.25936
+Batch Accuracy: 90.625%
 
 Batch Index: 18 ->
-Batch Loss: 0.26656
-Batch Accuracy: 93.75%
+Batch Loss: 0.24195
+Batch Accuracy: 90.625%
 
 Batch Index: 20 ->
-Batch Loss: 0.27698
+Batch Loss: 0.19347
 Batch Accuracy: 92.1875%
 
 Batch Index: 22 ->
-Batch Loss: 0.19695
-Batch Accuracy: 93.75%
-
-Batch Index: 24 ->
-Batch Loss: 0.27950
-Batch Accuracy: 90.625%
-
-Batch Index: 26 ->
-Batch Loss: 0.17588
+Batch Loss: 0.13812
 Batch Accuracy: 96.875%
 
-Batch Index: 28 ->
-Batch Loss: 0.21722
+Batch Index: 24 ->
+Batch Loss: 0.22316
 Batch Accuracy: 95.3125%
 
-Batch Index: 30 ->
-Batch Loss: 0.23663
-Batch Accuracy: 93.75%
+Batch Index: 26 ->
+Batch Loss: 0.16219
+Batch Accuracy: 95.3125%
 
-Batch Index: 32 ->
-Batch Loss: 0.23653
-Batch Accuracy: 89.0625%
-
-Batch Index: 34 ->
-Batch Loss: 0.24552
+Batch Index: 28 ->
+Batch Loss: 0.28829
 Batch Accuracy: 92.1875%
 
-Batch Index: 36 ->
-Batch Loss: 0.17926
-Batch Accuracy: 95.3125%
+Batch Index: 30 ->
+Batch Loss: 0.24771
+Batch Accuracy: 92.1875%
 
-Batch Index: 38 ->
-Batch Loss: 0.10174
+Batch Index: 32 ->
+Batch Loss: 0.10976
 Batch Accuracy: 100.0%
 
-Batch Index: 40 ->
-Batch Loss: 0.15083
+Batch Index: 34 ->
+Batch Loss: 0.20138
 Batch Accuracy: 95.3125%
 
-Batch Index: 42 ->
-Batch Loss: 0.23204
+Batch Index: 36 ->
+Batch Loss: 0.15366
+Batch Accuracy: 96.875%
+
+Batch Index: 38 ->
+Batch Loss: 0.20523
 Batch Accuracy: 93.75%
+
+Batch Index: 40 ->
+Batch Loss: 0.17430
+Batch Accuracy: 93.75%
+
+Batch Index: 42 ->
+Batch Loss: 0.14968
+Batch Accuracy: 98.4375%
 
 Batch Index: 44 ->
-Batch Loss: 0.23262
-Batch Accuracy: 93.75%
+Batch Loss: 0.19404
+Batch Accuracy: 92.1875%
 
 Batch Index: 46 ->
-Batch Loss: 0.22897
-Batch Accuracy: 89.0625%
+Batch Loss: 0.17924
+Batch Accuracy: 95.3125%
 
 Batch Index: 48 ->
-Batch Loss: 0.20762
+Batch Loss: 0.19209
 Batch Accuracy: 96.875%
 
 Batch Index: 50 ->
-Batch Loss: 0.19500
-Batch Accuracy: 96.875%
-
-Batch Index: 52 ->
-Batch Loss: 0.22316
-Batch Accuracy: 90.625%
-
-Batch Index: 54 ->
-Batch Loss: 0.26992
+Batch Loss: 0.22827
 Batch Accuracy: 93.75%
 
-Epoch 3 Complete!
-Training Accuracy: 93.92281
-Validation Accuracy: 99.34469
+Batch Index: 52 ->
+Batch Loss: 0.13918
+Batch Accuracy: 96.875%
 
-NEW BEST MODEL SAVED - Validation Accuracy: 99.34469
+Batch Index: 54 ->
+Batch Loss: 0.25447
+Batch Accuracy: 89.0625%
+
+Batch Index: 56 ->
+Batch Loss: 0.19784
+Batch Accuracy: 95.3125%
+
+Batch Index: 58 ->
+Batch Loss: 0.19521
+Batch Accuracy: 96.875%
+
+Batch Index: 60 ->
+Batch Loss: 0.13563
+Batch Accuracy: 96.875%
+
+Batch Index: 62 ->
+Batch Loss: 0.31492
+Batch Accuracy: 87.5%
+
+Batch Index: 64 ->
+Batch Loss: 0.21798
+Batch Accuracy: 96.875%
+
+Batch Index: 66 ->
+Batch Loss: 0.19471
+Batch Accuracy: 95.3125%
+
+Batch Index: 68 ->
+Batch Loss: 0.15583
+Batch Accuracy: 95.3125%
+
+Batch Index: 70 ->
+Batch Loss: 0.24614
+Batch Accuracy: 90.0%
+
+Epoch 3 Complete!
+Training Accuracy: 94.10596
+Validation Accuracy: 98.19095
+
+NEW BEST MODEL SAVED - Validation Accuracy: 98.19095
 
 Starting Training for Epoch Number 4:
 
 Batch Index: 0 ->
-Batch Loss: 0.19744
-Batch Accuracy: 92.1875%
+Batch Loss: 0.10680
+Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.20058
-Batch Accuracy: 96.875%
-
-Batch Index: 4 ->
-Batch Loss: 0.15450
-Batch Accuracy: 95.3125%
-
-Batch Index: 6 ->
-Batch Loss: 0.22383
-Batch Accuracy: 93.75%
-
-Batch Index: 8 ->
-Batch Loss: 0.19737
-Batch Accuracy: 92.1875%
-
-Batch Index: 10 ->
-Batch Loss: 0.18662
-Batch Accuracy: 93.75%
-
-Batch Index: 12 ->
-Batch Loss: 0.12806
-Batch Accuracy: 98.4375%
-
-Batch Index: 14 ->
-Batch Loss: 0.17748
-Batch Accuracy: 98.4375%
-
-Batch Index: 16 ->
-Batch Loss: 0.23699
-Batch Accuracy: 92.1875%
-
-Batch Index: 18 ->
-Batch Loss: 0.13286
-Batch Accuracy: 95.3125%
-
-Batch Index: 20 ->
-Batch Loss: 0.12010
-Batch Accuracy: 98.4375%
-
-Batch Index: 22 ->
-Batch Loss: 0.13331
-Batch Accuracy: 96.875%
-
-Batch Index: 24 ->
-Batch Loss: 0.11030
-Batch Accuracy: 98.4375%
-
-Batch Index: 26 ->
-Batch Loss: 0.13538
-Batch Accuracy: 95.3125%
-
-Batch Index: 28 ->
-Batch Loss: 0.19851
+Batch Loss: 0.23955
 Batch Accuracy: 90.625%
 
-Batch Index: 30 ->
-Batch Loss: 0.17832
+Batch Index: 4 ->
+Batch Loss: 0.24947
+Batch Accuracy: 90.625%
+
+Batch Index: 6 ->
+Batch Loss: 0.12033
+Batch Accuracy: 96.875%
+
+Batch Index: 8 ->
+Batch Loss: 0.09659
+Batch Accuracy: 98.4375%
+
+Batch Index: 10 ->
+Batch Loss: 0.11595
+Batch Accuracy: 100.0%
+
+Batch Index: 12 ->
+Batch Loss: 0.14115
+Batch Accuracy: 96.875%
+
+Batch Index: 14 ->
+Batch Loss: 0.24071
 Batch Accuracy: 93.75%
+
+Batch Index: 16 ->
+Batch Loss: 0.10154
+Batch Accuracy: 98.4375%
+
+Batch Index: 18 ->
+Batch Loss: 0.16004
+Batch Accuracy: 96.875%
+
+Batch Index: 20 ->
+Batch Loss: 0.10830
+Batch Accuracy: 100.0%
+
+Batch Index: 22 ->
+Batch Loss: 0.17683
+Batch Accuracy: 95.3125%
+
+Batch Index: 24 ->
+Batch Loss: 0.12565
+Batch Accuracy: 95.3125%
+
+Batch Index: 26 ->
+Batch Loss: 0.15884
+Batch Accuracy: 93.75%
+
+Batch Index: 28 ->
+Batch Loss: 0.16461
+Batch Accuracy: 92.1875%
+
+Batch Index: 30 ->
+Batch Loss: 0.13162
+Batch Accuracy: 95.3125%
 
 Batch Index: 32 ->
-Batch Loss: 0.18224
-Batch Accuracy: 93.75%
+Batch Loss: 0.17978
+Batch Accuracy: 95.3125%
 
 Batch Index: 34 ->
-Batch Loss: 0.21567
+Batch Loss: 0.17901
 Batch Accuracy: 93.75%
 
 Batch Index: 36 ->
-Batch Loss: 0.13869
-Batch Accuracy: 98.4375%
-
-Batch Index: 38 ->
-Batch Loss: 0.22764
+Batch Loss: 0.18315
 Batch Accuracy: 92.1875%
 
+Batch Index: 38 ->
+Batch Loss: 0.08710
+Batch Accuracy: 96.875%
+
 Batch Index: 40 ->
-Batch Loss: 0.14586
-Batch Accuracy: 95.3125%
+Batch Loss: 0.11510
+Batch Accuracy: 96.875%
 
 Batch Index: 42 ->
-Batch Loss: 0.12102
+Batch Loss: 0.16337
 Batch Accuracy: 95.3125%
 
 Batch Index: 44 ->
-Batch Loss: 0.21504
-Batch Accuracy: 87.5%
+Batch Loss: 0.10068
+Batch Accuracy: 96.875%
 
 Batch Index: 46 ->
-Batch Loss: 0.19012
-Batch Accuracy: 90.625%
+Batch Loss: 0.12819
+Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.12679
-Batch Accuracy: 98.4375%
+Batch Loss: 0.24241
+Batch Accuracy: 92.1875%
 
 Batch Index: 50 ->
-Batch Loss: 0.11544
-Batch Accuracy: 98.4375%
+Batch Loss: 0.08461
+Batch Accuracy: 100.0%
 
 Batch Index: 52 ->
-Batch Loss: 0.16017
-Batch Accuracy: 95.3125%
+Batch Loss: 0.20212
+Batch Accuracy: 90.625%
 
 Batch Index: 54 ->
-Batch Loss: 0.14911
+Batch Loss: 0.11017
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.19310
+Batch Accuracy: 92.1875%
+
+Batch Index: 58 ->
+Batch Loss: 0.15696
+Batch Accuracy: 92.1875%
+
+Batch Index: 60 ->
+Batch Loss: 0.23223
 Batch Accuracy: 93.75%
 
+Batch Index: 62 ->
+Batch Loss: 0.22592
+Batch Accuracy: 93.75%
+
+Batch Index: 64 ->
+Batch Loss: 0.09405
+Batch Accuracy: 98.4375%
+
+Batch Index: 66 ->
+Batch Loss: 0.30527
+Batch Accuracy: 93.75%
+
+Batch Index: 68 ->
+Batch Loss: 0.18036
+Batch Accuracy: 93.75%
+
+Batch Index: 70 ->
+Batch Loss: 0.26287
+Batch Accuracy: 94.0%
+
 Epoch 4 Complete!
-Training Accuracy: 94.84447
-Validation Accuracy: 99.21363
+Training Accuracy: 95.20971
+Validation Accuracy: 99.49749
+
+NEW BEST MODEL SAVED - Validation Accuracy: 99.49749
 
 Starting Training for Epoch Number 5:
 
 Batch Index: 0 ->
-Batch Loss: 0.21552
-Batch Accuracy: 92.1875%
+Batch Loss: 0.11030
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.11921
+Batch Loss: 0.17750
 Batch Accuracy: 95.3125%
 
 Batch Index: 4 ->
-Batch Loss: 0.11664
-Batch Accuracy: 98.4375%
+Batch Loss: 0.16660
+Batch Accuracy: 93.75%
 
 Batch Index: 6 ->
-Batch Loss: 0.11904
-Batch Accuracy: 96.875%
+Batch Loss: 0.17546
+Batch Accuracy: 95.3125%
 
 Batch Index: 8 ->
-Batch Loss: 0.08578
-Batch Accuracy: 100.0%
+Batch Loss: 0.16723
+Batch Accuracy: 96.875%
 
 Batch Index: 10 ->
-Batch Loss: 0.07528
+Batch Loss: 0.14503
 Batch Accuracy: 96.875%
 
 Batch Index: 12 ->
-Batch Loss: 0.08991
-Batch Accuracy: 100.0%
+Batch Loss: 0.13721
+Batch Accuracy: 96.875%
 
 Batch Index: 14 ->
-Batch Loss: 0.16766
+Batch Loss: 0.09675
 Batch Accuracy: 98.4375%
 
 Batch Index: 16 ->
-Batch Loss: 0.20060
-Batch Accuracy: 95.3125%
+Batch Loss: 0.25803
+Batch Accuracy: 93.75%
 
 Batch Index: 18 ->
-Batch Loss: 0.07108
+Batch Loss: 0.08327
 Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.10158
-Batch Accuracy: 96.875%
+Batch Loss: 0.16038
+Batch Accuracy: 90.625%
 
 Batch Index: 22 ->
-Batch Loss: 0.09038
-Batch Accuracy: 98.4375%
+Batch Loss: 0.17978
+Batch Accuracy: 93.75%
 
 Batch Index: 24 ->
-Batch Loss: 0.14477
-Batch Accuracy: 96.875%
+Batch Loss: 0.10331
+Batch Accuracy: 98.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.17193
+Batch Loss: 0.15232
 Batch Accuracy: 96.875%
 
 Batch Index: 28 ->
-Batch Loss: 0.12547
+Batch Loss: 0.08395
 Batch Accuracy: 98.4375%
 
 Batch Index: 30 ->
-Batch Loss: 0.18361
+Batch Loss: 0.12543
 Batch Accuracy: 95.3125%
 
 Batch Index: 32 ->
-Batch Loss: 0.09952
-Batch Accuracy: 98.4375%
+Batch Loss: 0.16710
+Batch Accuracy: 96.875%
 
 Batch Index: 34 ->
-Batch Loss: 0.10337
-Batch Accuracy: 96.875%
+Batch Loss: 0.13037
+Batch Accuracy: 98.4375%
 
 Batch Index: 36 ->
-Batch Loss: 0.18288
-Batch Accuracy: 92.1875%
-
-Batch Index: 38 ->
-Batch Loss: 0.08246
+Batch Loss: 0.11196
 Batch Accuracy: 96.875%
 
+Batch Index: 38 ->
+Batch Loss: 0.08152
+Batch Accuracy: 98.4375%
+
 Batch Index: 40 ->
-Batch Loss: 0.18940
+Batch Loss: 0.13471
 Batch Accuracy: 93.75%
 
 Batch Index: 42 ->
-Batch Loss: 0.10531
-Batch Accuracy: 98.4375%
+Batch Loss: 0.11466
+Batch Accuracy: 96.875%
 
 Batch Index: 44 ->
-Batch Loss: 0.19299
-Batch Accuracy: 93.75%
+Batch Loss: 0.13649
+Batch Accuracy: 96.875%
 
 Batch Index: 46 ->
-Batch Loss: 0.20066
-Batch Accuracy: 92.1875%
-
-Batch Index: 48 ->
-Batch Loss: 0.25923
-Batch Accuracy: 89.0625%
-
-Batch Index: 50 ->
-Batch Loss: 0.12907
+Batch Loss: 0.13865
 Batch Accuracy: 95.3125%
 
-Batch Index: 52 ->
-Batch Loss: 0.07124
-Batch Accuracy: 100.0%
+Batch Index: 48 ->
+Batch Loss: 0.08764
+Batch Accuracy: 98.4375%
 
-Batch Index: 54 ->
-Batch Loss: 0.16993
+Batch Index: 50 ->
+Batch Loss: 0.15990
 Batch Accuracy: 93.75%
 
+Batch Index: 52 ->
+Batch Loss: 0.09237
+Batch Accuracy: 98.4375%
+
+Batch Index: 54 ->
+Batch Loss: 0.07285
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.11806
+Batch Accuracy: 93.75%
+
+Batch Index: 58 ->
+Batch Loss: 0.05910
+Batch Accuracy: 100.0%
+
+Batch Index: 60 ->
+Batch Loss: 0.18915
+Batch Accuracy: 95.3125%
+
+Batch Index: 62 ->
+Batch Loss: 0.11767
+Batch Accuracy: 96.875%
+
+Batch Index: 64 ->
+Batch Loss: 0.14389
+Batch Accuracy: 95.3125%
+
+Batch Index: 66 ->
+Batch Loss: 0.16043
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.13386
+Batch Accuracy: 95.3125%
+
+Batch Index: 70 ->
+Batch Loss: 0.09214
+Batch Accuracy: 100.0%
+
 Epoch 5 Complete!
-Training Accuracy: 96.25576
-Validation Accuracy: 97.90301
+Training Accuracy: 96.40177
+Validation Accuracy: 99.59799
+
+NEW BEST MODEL SAVED - Validation Accuracy: 99.59799
 
 Starting Training for Epoch Number 6:
 
 Batch Index: 0 ->
-Batch Loss: 0.07980
-Batch Accuracy: 98.4375%
+Batch Loss: 0.28125
+Batch Accuracy: 90.625%
 
 Batch Index: 2 ->
-Batch Loss: 0.09606
-Batch Accuracy: 96.875%
+Batch Loss: 0.06110
+Batch Accuracy: 100.0%
 
 Batch Index: 4 ->
-Batch Loss: 0.17703
-Batch Accuracy: 95.3125%
+Batch Loss: 0.12873
+Batch Accuracy: 96.875%
 
 Batch Index: 6 ->
-Batch Loss: 0.16099
-Batch Accuracy: 95.3125%
+Batch Loss: 0.15889
+Batch Accuracy: 92.1875%
 
 Batch Index: 8 ->
-Batch Loss: 0.11387
-Batch Accuracy: 96.875%
+Batch Loss: 0.11556
+Batch Accuracy: 95.3125%
 
 Batch Index: 10 ->
-Batch Loss: 0.08207
-Batch Accuracy: 98.4375%
+Batch Loss: 0.20584
+Batch Accuracy: 93.75%
 
 Batch Index: 12 ->
-Batch Loss: 0.12664
-Batch Accuracy: 96.875%
+Batch Loss: 0.15146
+Batch Accuracy: 95.3125%
 
 Batch Index: 14 ->
-Batch Loss: 0.15559
+Batch Loss: 0.16606
 Batch Accuracy: 95.3125%
 
 Batch Index: 16 ->
-Batch Loss: 0.09742
-Batch Accuracy: 98.4375%
-
-Batch Index: 18 ->
-Batch Loss: 0.16310
-Batch Accuracy: 93.75%
-
-Batch Index: 20 ->
-Batch Loss: 0.15685
+Batch Loss: 0.09586
 Batch Accuracy: 96.875%
 
+Batch Index: 18 ->
+Batch Loss: 0.16248
+Batch Accuracy: 96.875%
+
+Batch Index: 20 ->
+Batch Loss: 0.08375
+Batch Accuracy: 100.0%
+
 Batch Index: 22 ->
-Batch Loss: 0.11714
+Batch Loss: 0.14638
 Batch Accuracy: 96.875%
 
 Batch Index: 24 ->
-Batch Loss: 0.09050
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09538
+Batch Accuracy: 96.875%
 
 Batch Index: 26 ->
-Batch Loss: 0.10132
-Batch Accuracy: 98.4375%
+Batch Loss: 0.20963
+Batch Accuracy: 92.1875%
 
 Batch Index: 28 ->
-Batch Loss: 0.08649
-Batch Accuracy: 98.4375%
-
-Batch Index: 30 ->
-Batch Loss: 0.21352
-Batch Accuracy: 95.3125%
-
-Batch Index: 32 ->
-Batch Loss: 0.10449
+Batch Loss: 0.07509
 Batch Accuracy: 100.0%
 
+Batch Index: 30 ->
+Batch Loss: 0.26352
+Batch Accuracy: 96.875%
+
+Batch Index: 32 ->
+Batch Loss: 0.18370
+Batch Accuracy: 92.1875%
+
 Batch Index: 34 ->
-Batch Loss: 0.24101
-Batch Accuracy: 87.5%
+Batch Loss: 0.06229
+Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.08560
+Batch Loss: 0.09541
 Batch Accuracy: 96.875%
 
 Batch Index: 38 ->
-Batch Loss: 0.15020
+Batch Loss: 0.13759
 Batch Accuracy: 96.875%
 
 Batch Index: 40 ->
-Batch Loss: 0.08751
-Batch Accuracy: 98.4375%
-
-Batch Index: 42 ->
-Batch Loss: 0.16301
+Batch Loss: 0.09149
 Batch Accuracy: 95.3125%
 
+Batch Index: 42 ->
+Batch Loss: 0.09000
+Batch Accuracy: 96.875%
+
 Batch Index: 44 ->
-Batch Loss: 0.21894
-Batch Accuracy: 92.1875%
-
-Batch Index: 46 ->
-Batch Loss: 0.10590
-Batch Accuracy: 96.875%
-
-Batch Index: 48 ->
-Batch Loss: 0.10805
-Batch Accuracy: 96.875%
-
-Batch Index: 50 ->
-Batch Loss: 0.14381
-Batch Accuracy: 96.875%
-
-Batch Index: 52 ->
-Batch Loss: 0.09487
+Batch Loss: 0.06161
 Batch Accuracy: 98.4375%
 
-Batch Index: 54 ->
-Batch Loss: 0.21632
+Batch Index: 46 ->
+Batch Loss: 0.13006
 Batch Accuracy: 93.75%
 
+Batch Index: 48 ->
+Batch Loss: 0.05234
+Batch Accuracy: 100.0%
+
+Batch Index: 50 ->
+Batch Loss: 0.12470
+Batch Accuracy: 95.3125%
+
+Batch Index: 52 ->
+Batch Loss: 0.13885
+Batch Accuracy: 93.75%
+
+Batch Index: 54 ->
+Batch Loss: 0.08172
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.14924
+Batch Accuracy: 95.3125%
+
+Batch Index: 58 ->
+Batch Loss: 0.11507
+Batch Accuracy: 95.3125%
+
+Batch Index: 60 ->
+Batch Loss: 0.09321
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.06260
+Batch Accuracy: 98.4375%
+
+Batch Index: 64 ->
+Batch Loss: 0.07528
+Batch Accuracy: 96.875%
+
+Batch Index: 66 ->
+Batch Loss: 0.09920
+Batch Accuracy: 98.4375%
+
+Batch Index: 68 ->
+Batch Loss: 0.10866
+Batch Accuracy: 96.875%
+
+Batch Index: 70 ->
+Batch Loss: 0.14815
+Batch Accuracy: 94.0%
+
 Epoch 6 Complete!
-Training Accuracy: 96.02535
-Validation Accuracy: 98.29620
+Training Accuracy: 96.51214
+Validation Accuracy: 99.69849
+
+NEW BEST MODEL SAVED - Validation Accuracy: 99.69849
 
 Starting Training for Epoch Number 7:
 
 Batch Index: 0 ->
-Batch Loss: 0.05649
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09213
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.06176
-Batch Accuracy: 98.4375%
+Batch Loss: 0.06514
+Batch Accuracy: 96.875%
 
 Batch Index: 4 ->
-Batch Loss: 0.08349
-Batch Accuracy: 98.4375%
+Batch Loss: 0.13361
+Batch Accuracy: 95.3125%
 
 Batch Index: 6 ->
-Batch Loss: 0.22412
-Batch Accuracy: 93.75%
+Batch Loss: 0.09948
+Batch Accuracy: 96.875%
 
 Batch Index: 8 ->
-Batch Loss: 0.06000
-Batch Accuracy: 100.0%
+Batch Loss: 0.09600
+Batch Accuracy: 96.875%
 
 Batch Index: 10 ->
-Batch Loss: 0.09304
-Batch Accuracy: 98.4375%
-
-Batch Index: 12 ->
-Batch Loss: 0.06699
-Batch Accuracy: 98.4375%
-
-Batch Index: 14 ->
-Batch Loss: 0.04203
+Batch Loss: 0.07290
 Batch Accuracy: 100.0%
 
+Batch Index: 12 ->
+Batch Loss: 0.10495
+Batch Accuracy: 96.875%
+
+Batch Index: 14 ->
+Batch Loss: 0.07636
+Batch Accuracy: 96.875%
+
 Batch Index: 16 ->
-Batch Loss: 0.20502
-Batch Accuracy: 92.1875%
+Batch Loss: 0.06806
+Batch Accuracy: 100.0%
 
 Batch Index: 18 ->
-Batch Loss: 0.08450
+Batch Loss: 0.13710
 Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.04997
-Batch Accuracy: 100.0%
+Batch Loss: 0.11273
+Batch Accuracy: 98.4375%
 
 Batch Index: 22 ->
-Batch Loss: 0.07214
-Batch Accuracy: 100.0%
+Batch Loss: 0.09706
+Batch Accuracy: 96.875%
 
 Batch Index: 24 ->
-Batch Loss: 0.06827
+Batch Loss: 0.06350
 Batch Accuracy: 100.0%
 
 Batch Index: 26 ->
-Batch Loss: 0.12895
-Batch Accuracy: 95.3125%
+Batch Loss: 0.14688
+Batch Accuracy: 96.875%
 
 Batch Index: 28 ->
-Batch Loss: 0.06034
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09347
+Batch Accuracy: 96.875%
 
 Batch Index: 30 ->
-Batch Loss: 0.10167
-Batch Accuracy: 96.875%
-
-Batch Index: 32 ->
-Batch Loss: 0.06721
+Batch Loss: 0.08314
 Batch Accuracy: 98.4375%
 
+Batch Index: 32 ->
+Batch Loss: 0.05385
+Batch Accuracy: 100.0%
+
 Batch Index: 34 ->
-Batch Loss: 0.14145
-Batch Accuracy: 96.875%
+Batch Loss: 0.12678
+Batch Accuracy: 93.75%
 
 Batch Index: 36 ->
-Batch Loss: 0.21983
-Batch Accuracy: 96.875%
+Batch Loss: 0.13795
+Batch Accuracy: 95.3125%
 
 Batch Index: 38 ->
-Batch Loss: 0.11684
-Batch Accuracy: 96.875%
+Batch Loss: 0.14370
+Batch Accuracy: 93.75%
 
 Batch Index: 40 ->
-Batch Loss: 0.06711
+Batch Loss: 0.07497
 Batch Accuracy: 98.4375%
 
 Batch Index: 42 ->
-Batch Loss: 0.07500
-Batch Accuracy: 98.4375%
+Batch Loss: 0.11908
+Batch Accuracy: 95.3125%
 
 Batch Index: 44 ->
-Batch Loss: 0.10532
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10003
+Batch Accuracy: 95.3125%
 
 Batch Index: 46 ->
-Batch Loss: 0.11535
-Batch Accuracy: 96.875%
+Batch Loss: 0.18281
+Batch Accuracy: 95.3125%
 
 Batch Index: 48 ->
-Batch Loss: 0.08748
-Batch Accuracy: 98.4375%
-
-Batch Index: 50 ->
-Batch Loss: 0.09441
-Batch Accuracy: 98.4375%
-
-Batch Index: 52 ->
-Batch Loss: 0.11734
-Batch Accuracy: 98.4375%
-
-Batch Index: 54 ->
-Batch Loss: 0.05633
+Batch Loss: 0.04248
 Batch Accuracy: 100.0%
 
+Batch Index: 50 ->
+Batch Loss: 0.05361
+Batch Accuracy: 100.0%
+
+Batch Index: 52 ->
+Batch Loss: 0.15431
+Batch Accuracy: 93.75%
+
+Batch Index: 54 ->
+Batch Loss: 0.10691
+Batch Accuracy: 96.875%
+
+Batch Index: 56 ->
+Batch Loss: 0.07617
+Batch Accuracy: 96.875%
+
+Batch Index: 58 ->
+Batch Loss: 0.14542
+Batch Accuracy: 95.3125%
+
+Batch Index: 60 ->
+Batch Loss: 0.08815
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.12882
+Batch Accuracy: 95.3125%
+
+Batch Index: 64 ->
+Batch Loss: 0.08359
+Batch Accuracy: 98.4375%
+
+Batch Index: 66 ->
+Batch Loss: 0.14046
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.07404
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.06825
+Batch Accuracy: 98.0%
+
 Epoch 7 Complete!
-Training Accuracy: 96.91820
-Validation Accuracy: 99.34469
+Training Accuracy: 96.82119
+Validation Accuracy: 99.39698
 
 Starting Training for Epoch Number 8:
 
 Batch Index: 0 ->
-Batch Loss: 0.09343
-Batch Accuracy: 100.0%
-
-Batch Index: 2 ->
-Batch Loss: 0.09026
+Batch Loss: 0.05079
 Batch Accuracy: 98.4375%
 
+Batch Index: 2 ->
+Batch Loss: 0.06290
+Batch Accuracy: 100.0%
+
 Batch Index: 4 ->
-Batch Loss: 0.19093
-Batch Accuracy: 93.75%
+Batch Loss: 0.09063
+Batch Accuracy: 96.875%
 
 Batch Index: 6 ->
-Batch Loss: 0.11615
-Batch Accuracy: 95.3125%
+Batch Loss: 0.10895
+Batch Accuracy: 96.875%
 
 Batch Index: 8 ->
-Batch Loss: 0.07035
+Batch Loss: 0.07419
 Batch Accuracy: 98.4375%
 
 Batch Index: 10 ->
-Batch Loss: 0.13542
-Batch Accuracy: 95.3125%
+Batch Loss: 0.19894
+Batch Accuracy: 93.75%
 
 Batch Index: 12 ->
-Batch Loss: 0.07879
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10474
+Batch Accuracy: 96.875%
 
 Batch Index: 14 ->
-Batch Loss: 0.07152
-Batch Accuracy: 100.0%
+Batch Loss: 0.13969
+Batch Accuracy: 95.3125%
 
 Batch Index: 16 ->
-Batch Loss: 0.10200
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10464
+Batch Accuracy: 96.875%
 
 Batch Index: 18 ->
-Batch Loss: 0.05338
-Batch Accuracy: 100.0%
+Batch Loss: 0.07706
+Batch Accuracy: 98.4375%
 
 Batch Index: 20 ->
-Batch Loss: 0.05365
+Batch Loss: 0.05292
 Batch Accuracy: 100.0%
 
 Batch Index: 22 ->
-Batch Loss: 0.09017
-Batch Accuracy: 96.875%
+Batch Loss: 0.07401
+Batch Accuracy: 100.0%
 
 Batch Index: 24 ->
-Batch Loss: 0.06835
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10707
+Batch Accuracy: 96.875%
 
 Batch Index: 26 ->
-Batch Loss: 0.07582
-Batch Accuracy: 96.875%
-
-Batch Index: 28 ->
-Batch Loss: 0.08785
-Batch Accuracy: 96.875%
-
-Batch Index: 30 ->
-Batch Loss: 0.08558
-Batch Accuracy: 98.4375%
-
-Batch Index: 32 ->
-Batch Loss: 0.14770
+Batch Loss: 0.10041
 Batch Accuracy: 95.3125%
 
+Batch Index: 28 ->
+Batch Loss: 0.15170
+Batch Accuracy: 93.75%
+
+Batch Index: 30 ->
+Batch Loss: 0.02558
+Batch Accuracy: 100.0%
+
+Batch Index: 32 ->
+Batch Loss: 0.05821
+Batch Accuracy: 98.4375%
+
 Batch Index: 34 ->
-Batch Loss: 0.03878
+Batch Loss: 0.06688
 Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.08146
+Batch Loss: 0.11067
 Batch Accuracy: 98.4375%
 
 Batch Index: 38 ->
-Batch Loss: 0.05848
-Batch Accuracy: 98.4375%
+Batch Loss: 0.15165
+Batch Accuracy: 96.875%
 
 Batch Index: 40 ->
-Batch Loss: 0.04268
-Batch Accuracy: 100.0%
+Batch Loss: 0.06122
+Batch Accuracy: 98.4375%
 
 Batch Index: 42 ->
-Batch Loss: 0.08719
+Batch Loss: 0.08111
 Batch Accuracy: 98.4375%
 
 Batch Index: 44 ->
-Batch Loss: 0.07138
-Batch Accuracy: 98.4375%
+Batch Loss: 0.21326
+Batch Accuracy: 93.75%
 
 Batch Index: 46 ->
-Batch Loss: 0.05136
-Batch Accuracy: 100.0%
+Batch Loss: 0.09652
+Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.09250
+Batch Loss: 0.06317
 Batch Accuracy: 98.4375%
 
 Batch Index: 50 ->
-Batch Loss: 0.08976
-Batch Accuracy: 96.875%
-
-Batch Index: 52 ->
-Batch Loss: 0.04523
-Batch Accuracy: 98.4375%
-
-Batch Index: 54 ->
-Batch Loss: 0.02203
+Batch Loss: 0.05305
 Batch Accuracy: 100.0%
 
+Batch Index: 52 ->
+Batch Loss: 0.08838
+Batch Accuracy: 96.875%
+
+Batch Index: 54 ->
+Batch Loss: 0.05040
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.15645
+Batch Accuracy: 93.75%
+
+Batch Index: 58 ->
+Batch Loss: 0.08305
+Batch Accuracy: 95.3125%
+
+Batch Index: 60 ->
+Batch Loss: 0.06183
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.10386
+Batch Accuracy: 98.4375%
+
+Batch Index: 64 ->
+Batch Loss: 0.05235
+Batch Accuracy: 100.0%
+
+Batch Index: 66 ->
+Batch Loss: 0.10072
+Batch Accuracy: 93.75%
+
+Batch Index: 68 ->
+Batch Loss: 0.17160
+Batch Accuracy: 93.75%
+
+Batch Index: 70 ->
+Batch Loss: 0.12828
+Batch Accuracy: 94.0%
+
 Epoch 8 Complete!
-Training Accuracy: 98.12788
-Validation Accuracy: 99.08257
+Training Accuracy: 97.17439
+Validation Accuracy: 99.49749
 
 Starting Training for Epoch Number 9:
 
 Batch Index: 0 ->
-Batch Loss: 0.06339
+Batch Loss: 0.05039
 Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.04583
-Batch Accuracy: 100.0%
+Batch Loss: 0.10490
+Batch Accuracy: 98.4375%
 
 Batch Index: 4 ->
-Batch Loss: 0.14542
-Batch Accuracy: 95.3125%
+Batch Loss: 0.03816
+Batch Accuracy: 100.0%
 
 Batch Index: 6 ->
-Batch Loss: 0.11830
+Batch Loss: 0.12950
 Batch Accuracy: 93.75%
 
 Batch Index: 8 ->
-Batch Loss: 0.09095
-Batch Accuracy: 95.3125%
-
-Batch Index: 10 ->
-Batch Loss: 0.07000
+Batch Loss: 0.05099
 Batch Accuracy: 96.875%
 
+Batch Index: 10 ->
+Batch Loss: 0.05969
+Batch Accuracy: 98.4375%
+
 Batch Index: 12 ->
-Batch Loss: 0.03683
+Batch Loss: 0.05608
 Batch Accuracy: 100.0%
 
 Batch Index: 14 ->
-Batch Loss: 0.13397
-Batch Accuracy: 95.3125%
+Batch Loss: 0.02750
+Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.08558
-Batch Accuracy: 98.4375%
+Batch Loss: 0.13545
+Batch Accuracy: 96.875%
 
 Batch Index: 18 ->
-Batch Loss: 0.05772
+Batch Loss: 0.06883
 Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.04583
-Batch Accuracy: 100.0%
+Batch Loss: 0.08336
+Batch Accuracy: 95.3125%
 
 Batch Index: 22 ->
-Batch Loss: 0.07542
+Batch Loss: 0.05056
 Batch Accuracy: 98.4375%
 
 Batch Index: 24 ->
-Batch Loss: 0.09879
-Batch Accuracy: 96.875%
+Batch Loss: 0.06004
+Batch Accuracy: 98.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.12657
-Batch Accuracy: 93.75%
+Batch Loss: 0.03952
+Batch Accuracy: 100.0%
 
 Batch Index: 28 ->
-Batch Loss: 0.08731
-Batch Accuracy: 96.875%
+Batch Loss: 0.04017
+Batch Accuracy: 98.4375%
 
 Batch Index: 30 ->
-Batch Loss: 0.18863
-Batch Accuracy: 92.1875%
-
-Batch Index: 32 ->
-Batch Loss: 0.05771
-Batch Accuracy: 98.4375%
-
-Batch Index: 34 ->
-Batch Loss: 0.06523
-Batch Accuracy: 98.4375%
-
-Batch Index: 36 ->
-Batch Loss: 0.11463
-Batch Accuracy: 95.3125%
-
-Batch Index: 38 ->
-Batch Loss: 0.09295
+Batch Loss: 0.17617
 Batch Accuracy: 96.875%
 
+Batch Index: 32 ->
+Batch Loss: 0.02086
+Batch Accuracy: 100.0%
+
+Batch Index: 34 ->
+Batch Loss: 0.07497
+Batch Accuracy: 96.875%
+
+Batch Index: 36 ->
+Batch Loss: 0.03765
+Batch Accuracy: 100.0%
+
+Batch Index: 38 ->
+Batch Loss: 0.04291
+Batch Accuracy: 100.0%
+
 Batch Index: 40 ->
-Batch Loss: 0.12952
-Batch Accuracy: 95.3125%
+Batch Loss: 0.09114
+Batch Accuracy: 98.4375%
 
 Batch Index: 42 ->
-Batch Loss: 0.08631
+Batch Loss: 0.14217
 Batch Accuracy: 96.875%
 
 Batch Index: 44 ->
-Batch Loss: 0.06782
-Batch Accuracy: 98.4375%
+Batch Loss: 0.02729
+Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.10791
-Batch Accuracy: 98.4375%
-
-Batch Index: 48 ->
-Batch Loss: 0.04440
-Batch Accuracy: 100.0%
-
-Batch Index: 50 ->
-Batch Loss: 0.12033
-Batch Accuracy: 95.3125%
-
-Batch Index: 52 ->
-Batch Loss: 0.10632
+Batch Loss: 0.10323
 Batch Accuracy: 96.875%
 
-Batch Index: 54 ->
-Batch Loss: 0.06755
+Batch Index: 48 ->
+Batch Loss: 0.06799
+Batch Accuracy: 96.875%
+
+Batch Index: 50 ->
+Batch Loss: 0.02623
 Batch Accuracy: 100.0%
 
+Batch Index: 52 ->
+Batch Loss: 0.11386
+Batch Accuracy: 95.3125%
+
+Batch Index: 54 ->
+Batch Loss: 0.07745
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.03982
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.14173
+Batch Accuracy: 95.3125%
+
+Batch Index: 60 ->
+Batch Loss: 0.04735
+Batch Accuracy: 100.0%
+
+Batch Index: 62 ->
+Batch Loss: 0.04418
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.13872
+Batch Accuracy: 96.875%
+
+Batch Index: 66 ->
+Batch Loss: 0.09611
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.07959
+Batch Accuracy: 95.3125%
+
+Batch Index: 70 ->
+Batch Loss: 0.16125
+Batch Accuracy: 94.0%
+
 Epoch 9 Complete!
-Training Accuracy: 97.43664
-Validation Accuracy: 98.95151
+Training Accuracy: 97.79249
+Validation Accuracy: 99.59799
 
 Starting Training for Epoch Number 10:
 
 Batch Index: 0 ->
-Batch Loss: 0.04007
+Batch Loss: 0.06785
 Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.17957
-Batch Accuracy: 90.625%
+Batch Loss: 0.06335
+Batch Accuracy: 96.875%
 
 Batch Index: 4 ->
-Batch Loss: 0.06707
-Batch Accuracy: 98.4375%
+Batch Loss: 0.15670
+Batch Accuracy: 93.75%
 
 Batch Index: 6 ->
-Batch Loss: 0.04569
+Batch Loss: 0.04832
 Batch Accuracy: 100.0%
 
 Batch Index: 8 ->
-Batch Loss: 0.03117
-Batch Accuracy: 100.0%
+Batch Loss: 0.06063
+Batch Accuracy: 98.4375%
 
 Batch Index: 10 ->
-Batch Loss: 0.13034
-Batch Accuracy: 96.875%
-
-Batch Index: 12 ->
-Batch Loss: 0.05032
+Batch Loss: 0.05288
 Batch Accuracy: 100.0%
 
+Batch Index: 12 ->
+Batch Loss: 0.05577
+Batch Accuracy: 98.4375%
+
 Batch Index: 14 ->
-Batch Loss: 0.08595
+Batch Loss: 0.07236
 Batch Accuracy: 96.875%
 
 Batch Index: 16 ->
-Batch Loss: 0.21671
+Batch Loss: 0.11486
 Batch Accuracy: 95.3125%
 
 Batch Index: 18 ->
-Batch Loss: 0.13568
-Batch Accuracy: 96.875%
+Batch Loss: 0.07688
+Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.12826
-Batch Accuracy: 95.3125%
+Batch Loss: 0.01660
+Batch Accuracy: 100.0%
 
 Batch Index: 22 ->
-Batch Loss: 0.06667
+Batch Loss: 0.06879
 Batch Accuracy: 98.4375%
 
 Batch Index: 24 ->
-Batch Loss: 0.05749
-Batch Accuracy: 100.0%
+Batch Loss: 0.06684
+Batch Accuracy: 98.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.04467
-Batch Accuracy: 100.0%
+Batch Loss: 0.04612
+Batch Accuracy: 98.4375%
 
 Batch Index: 28 ->
-Batch Loss: 0.05173
-Batch Accuracy: 100.0%
+Batch Loss: 0.06545
+Batch Accuracy: 96.875%
 
 Batch Index: 30 ->
-Batch Loss: 0.10650
-Batch Accuracy: 95.3125%
+Batch Loss: 0.10078
+Batch Accuracy: 96.875%
 
 Batch Index: 32 ->
-Batch Loss: 0.13566
-Batch Accuracy: 93.75%
-
-Batch Index: 34 ->
-Batch Loss: 0.08448
-Batch Accuracy: 96.875%
-
-Batch Index: 36 ->
-Batch Loss: 0.09082
-Batch Accuracy: 96.875%
-
-Batch Index: 38 ->
-Batch Loss: 0.19737
-Batch Accuracy: 92.1875%
-
-Batch Index: 40 ->
-Batch Loss: 0.09385
+Batch Loss: 0.12814
 Batch Accuracy: 95.3125%
 
+Batch Index: 34 ->
+Batch Loss: 0.06372
+Batch Accuracy: 100.0%
+
+Batch Index: 36 ->
+Batch Loss: 0.08162
+Batch Accuracy: 98.4375%
+
+Batch Index: 38 ->
+Batch Loss: 0.08471
+Batch Accuracy: 96.875%
+
+Batch Index: 40 ->
+Batch Loss: 0.02493
+Batch Accuracy: 100.0%
+
 Batch Index: 42 ->
-Batch Loss: 0.02893
+Batch Loss: 0.03013
 Batch Accuracy: 100.0%
 
 Batch Index: 44 ->
-Batch Loss: 0.06190
+Batch Loss: 0.05225
 Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.08828
+Batch Loss: 0.07020
 Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.21940
+Batch Loss: 0.14627
 Batch Accuracy: 93.75%
 
 Batch Index: 50 ->
-Batch Loss: 0.03427
-Batch Accuracy: 100.0%
+Batch Loss: 0.09004
+Batch Accuracy: 96.875%
 
 Batch Index: 52 ->
-Batch Loss: 0.09987
-Batch Accuracy: 95.3125%
+Batch Loss: 0.02427
+Batch Accuracy: 100.0%
 
 Batch Index: 54 ->
-Batch Loss: 0.21604
-Batch Accuracy: 87.5%
+Batch Loss: 0.08789
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.14189
+Batch Accuracy: 95.3125%
+
+Batch Index: 58 ->
+Batch Loss: 0.05482
+Batch Accuracy: 100.0%
+
+Batch Index: 60 ->
+Batch Loss: 0.05839
+Batch Accuracy: 96.875%
+
+Batch Index: 62 ->
+Batch Loss: 0.06664
+Batch Accuracy: 95.3125%
+
+Batch Index: 64 ->
+Batch Loss: 0.06320
+Batch Accuracy: 96.875%
+
+Batch Index: 66 ->
+Batch Loss: 0.11404
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.07434
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.09735
+Batch Accuracy: 98.0%
 
 Epoch 10 Complete!
-Training Accuracy: 97.20622
-Validation Accuracy: 97.50983
+Training Accuracy: 97.68212
+Validation Accuracy: 99.69849
 
 Starting Training for Epoch Number 11:
 
 Batch Index: 0 ->
-Batch Loss: 0.09717
-Batch Accuracy: 96.875%
-
-Batch Index: 2 ->
-Batch Loss: 0.18701
-Batch Accuracy: 90.625%
-
-Batch Index: 4 ->
-Batch Loss: 0.04774
+Batch Loss: 0.04245
 Batch Accuracy: 100.0%
 
+Batch Index: 2 ->
+Batch Loss: 0.10257
+Batch Accuracy: 95.3125%
+
+Batch Index: 4 ->
+Batch Loss: 0.07995
+Batch Accuracy: 96.875%
+
 Batch Index: 6 ->
-Batch Loss: 0.04813
+Batch Loss: 0.03581
 Batch Accuracy: 100.0%
 
 Batch Index: 8 ->
-Batch Loss: 0.05829
-Batch Accuracy: 100.0%
+Batch Loss: 0.08826
+Batch Accuracy: 98.4375%
 
 Batch Index: 10 ->
-Batch Loss: 0.21346
-Batch Accuracy: 90.625%
+Batch Loss: 0.08637
+Batch Accuracy: 96.875%
 
 Batch Index: 12 ->
-Batch Loss: 0.07040
+Batch Loss: 0.03766
 Batch Accuracy: 98.4375%
 
 Batch Index: 14 ->
-Batch Loss: 0.03562
+Batch Loss: 0.04507
 Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.09082
-Batch Accuracy: 96.875%
-
-Batch Index: 18 ->
-Batch Loss: 0.06186
-Batch Accuracy: 100.0%
-
-Batch Index: 20 ->
-Batch Loss: 0.11747
-Batch Accuracy: 93.75%
-
-Batch Index: 22 ->
-Batch Loss: 0.02597
-Batch Accuracy: 100.0%
-
-Batch Index: 24 ->
-Batch Loss: 0.06635
-Batch Accuracy: 96.875%
-
-Batch Index: 26 ->
-Batch Loss: 0.04168
-Batch Accuracy: 100.0%
-
-Batch Index: 28 ->
-Batch Loss: 0.05463
-Batch Accuracy: 100.0%
-
-Batch Index: 30 ->
-Batch Loss: 0.10130
-Batch Accuracy: 96.875%
-
-Batch Index: 32 ->
-Batch Loss: 0.06460
-Batch Accuracy: 98.4375%
-
-Batch Index: 34 ->
-Batch Loss: 0.09558
+Batch Loss: 0.10276
 Batch Accuracy: 95.3125%
 
+Batch Index: 18 ->
+Batch Loss: 0.07088
+Batch Accuracy: 98.4375%
+
+Batch Index: 20 ->
+Batch Loss: 0.04305
+Batch Accuracy: 98.4375%
+
+Batch Index: 22 ->
+Batch Loss: 0.05725
+Batch Accuracy: 96.875%
+
+Batch Index: 24 ->
+Batch Loss: 0.03284
+Batch Accuracy: 100.0%
+
+Batch Index: 26 ->
+Batch Loss: 0.22916
+Batch Accuracy: 95.3125%
+
+Batch Index: 28 ->
+Batch Loss: 0.17513
+Batch Accuracy: 93.75%
+
+Batch Index: 30 ->
+Batch Loss: 0.02956
+Batch Accuracy: 100.0%
+
+Batch Index: 32 ->
+Batch Loss: 0.06724
+Batch Accuracy: 100.0%
+
+Batch Index: 34 ->
+Batch Loss: 0.06267
+Batch Accuracy: 96.875%
+
 Batch Index: 36 ->
-Batch Loss: 0.07855
+Batch Loss: 0.07742
 Batch Accuracy: 98.4375%
 
 Batch Index: 38 ->
-Batch Loss: 0.07116
-Batch Accuracy: 98.4375%
+Batch Loss: 0.14797
+Batch Accuracy: 96.875%
 
 Batch Index: 40 ->
-Batch Loss: 0.10130
-Batch Accuracy: 96.875%
+Batch Loss: 0.04913
+Batch Accuracy: 98.4375%
 
 Batch Index: 42 ->
-Batch Loss: 0.09360
-Batch Accuracy: 96.875%
+Batch Loss: 0.10049
+Batch Accuracy: 95.3125%
 
 Batch Index: 44 ->
-Batch Loss: 0.05372
-Batch Accuracy: 98.4375%
+Batch Loss: 0.08814
+Batch Accuracy: 96.875%
 
 Batch Index: 46 ->
-Batch Loss: 0.02353
-Batch Accuracy: 100.0%
-
-Batch Index: 48 ->
-Batch Loss: 0.07960
-Batch Accuracy: 96.875%
-
-Batch Index: 50 ->
-Batch Loss: 0.08522
-Batch Accuracy: 96.875%
-
-Batch Index: 52 ->
-Batch Loss: 0.10318
+Batch Loss: 0.07041
 Batch Accuracy: 98.4375%
 
-Batch Index: 54 ->
-Batch Loss: 0.04900
+Batch Index: 48 ->
+Batch Loss: 0.04622
+Batch Accuracy: 98.4375%
+
+Batch Index: 50 ->
+Batch Loss: 0.04643
+Batch Accuracy: 98.4375%
+
+Batch Index: 52 ->
+Batch Loss: 0.02686
 Batch Accuracy: 100.0%
 
+Batch Index: 54 ->
+Batch Loss: 0.04016
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.09352
+Batch Accuracy: 95.3125%
+
+Batch Index: 58 ->
+Batch Loss: 0.04738
+Batch Accuracy: 98.4375%
+
+Batch Index: 60 ->
+Batch Loss: 0.06314
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.09278
+Batch Accuracy: 95.3125%
+
+Batch Index: 64 ->
+Batch Loss: 0.09055
+Batch Accuracy: 96.875%
+
+Batch Index: 66 ->
+Batch Loss: 0.08592
+Batch Accuracy: 98.4375%
+
+Batch Index: 68 ->
+Batch Loss: 0.09786
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.20618
+Batch Accuracy: 94.0%
+
 Epoch 11 Complete!
-Training Accuracy: 97.66705
-Validation Accuracy: 98.55832
+Training Accuracy: 97.63797
+Validation Accuracy: 99.39698
 
 Starting Training for Epoch Number 12:
 
 Batch Index: 0 ->
-Batch Loss: 0.03458
-Batch Accuracy: 100.0%
+Batch Loss: 0.06518
+Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.08060
-Batch Accuracy: 100.0%
+Batch Loss: 0.04841
+Batch Accuracy: 96.875%
 
 Batch Index: 4 ->
-Batch Loss: 0.03764
+Batch Loss: 0.07118
 Batch Accuracy: 98.4375%
 
 Batch Index: 6 ->
-Batch Loss: 0.08265
-Batch Accuracy: 96.875%
+Batch Loss: 0.09706
+Batch Accuracy: 98.4375%
 
 Batch Index: 8 ->
-Batch Loss: 0.11380
+Batch Loss: 0.06175
 Batch Accuracy: 98.4375%
 
 Batch Index: 10 ->
-Batch Loss: 0.03144
-Batch Accuracy: 100.0%
+Batch Loss: 0.06209
+Batch Accuracy: 98.4375%
 
 Batch Index: 12 ->
-Batch Loss: 0.05388
-Batch Accuracy: 98.4375%
+Batch Loss: 0.07780
+Batch Accuracy: 96.875%
 
 Batch Index: 14 ->
-Batch Loss: 0.06120
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09534
+Batch Accuracy: 96.875%
 
 Batch Index: 16 ->
-Batch Loss: 0.03809
-Batch Accuracy: 100.0%
+Batch Loss: 0.06842
+Batch Accuracy: 98.4375%
 
 Batch Index: 18 ->
-Batch Loss: 0.02960
-Batch Accuracy: 100.0%
+Batch Loss: 0.09360
+Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.12173
-Batch Accuracy: 93.75%
+Batch Loss: 0.02272
+Batch Accuracy: 100.0%
 
 Batch Index: 22 ->
-Batch Loss: 0.05143
+Batch Loss: 0.06070
 Batch Accuracy: 98.4375%
 
 Batch Index: 24 ->
-Batch Loss: 0.06602
-Batch Accuracy: 98.4375%
-
-Batch Index: 26 ->
-Batch Loss: 0.07435
-Batch Accuracy: 100.0%
-
-Batch Index: 28 ->
-Batch Loss: 0.07469
-Batch Accuracy: 98.4375%
-
-Batch Index: 30 ->
-Batch Loss: 0.09257
+Batch Loss: 0.06875
 Batch Accuracy: 96.875%
 
+Batch Index: 26 ->
+Batch Loss: 0.08073
+Batch Accuracy: 96.875%
+
+Batch Index: 28 ->
+Batch Loss: 0.11677
+Batch Accuracy: 96.875%
+
+Batch Index: 30 ->
+Batch Loss: 0.08862
+Batch Accuracy: 98.4375%
+
 Batch Index: 32 ->
-Batch Loss: 0.02982
-Batch Accuracy: 100.0%
-
-Batch Index: 34 ->
-Batch Loss: 0.03973
-Batch Accuracy: 100.0%
-
-Batch Index: 36 ->
-Batch Loss: 0.08536
+Batch Loss: 0.08552
 Batch Accuracy: 95.3125%
 
+Batch Index: 34 ->
+Batch Loss: 0.06999
+Batch Accuracy: 98.4375%
+
+Batch Index: 36 ->
+Batch Loss: 0.05470
+Batch Accuracy: 98.4375%
+
 Batch Index: 38 ->
-Batch Loss: 0.08508
+Batch Loss: 0.06389
 Batch Accuracy: 98.4375%
 
 Batch Index: 40 ->
-Batch Loss: 0.02923
+Batch Loss: 0.01683
 Batch Accuracy: 100.0%
 
 Batch Index: 42 ->
-Batch Loss: 0.04488
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10629
+Batch Accuracy: 96.875%
 
 Batch Index: 44 ->
-Batch Loss: 0.02789
+Batch Loss: 0.01416
 Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.08933
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09109
+Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.15401
-Batch Accuracy: 95.3125%
+Batch Loss: 0.04612
+Batch Accuracy: 100.0%
 
 Batch Index: 50 ->
-Batch Loss: 0.13655
+Batch Loss: 0.06591
 Batch Accuracy: 96.875%
 
 Batch Index: 52 ->
-Batch Loss: 0.07172
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03005
+Batch Accuracy: 100.0%
 
 Batch Index: 54 ->
-Batch Loss: 0.22122
+Batch Loss: 0.03353
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.11126
 Batch Accuracy: 93.75%
 
+Batch Index: 58 ->
+Batch Loss: 0.03774
+Batch Accuracy: 98.4375%
+
+Batch Index: 60 ->
+Batch Loss: 0.01548
+Batch Accuracy: 100.0%
+
+Batch Index: 62 ->
+Batch Loss: 0.07406
+Batch Accuracy: 96.875%
+
+Batch Index: 64 ->
+Batch Loss: 0.04881
+Batch Accuracy: 98.4375%
+
+Batch Index: 66 ->
+Batch Loss: 0.06960
+Batch Accuracy: 95.3125%
+
+Batch Index: 68 ->
+Batch Loss: 0.05938
+Batch Accuracy: 100.0%
+
+Batch Index: 70 ->
+Batch Loss: 0.03197
+Batch Accuracy: 100.0%
+
 Epoch 12 Complete!
-Training Accuracy: 98.12788
-Validation Accuracy: 98.03408
+Training Accuracy: 98.03532
+Validation Accuracy: 99.59799
 
 Starting Training for Epoch Number 13:
 
 Batch Index: 0 ->
-Batch Loss: 0.05800
+Batch Loss: 0.08053
 Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.03644
+Batch Loss: 0.03531
 Batch Accuracy: 100.0%
 
 Batch Index: 4 ->
-Batch Loss: 0.11842
-Batch Accuracy: 95.3125%
-
-Batch Index: 6 ->
-Batch Loss: 0.05684
+Batch Loss: 0.03783
 Batch Accuracy: 98.4375%
 
-Batch Index: 8 ->
-Batch Loss: 0.02362
+Batch Index: 6 ->
+Batch Loss: 0.01567
 Batch Accuracy: 100.0%
 
+Batch Index: 8 ->
+Batch Loss: 0.08727
+Batch Accuracy: 98.4375%
+
 Batch Index: 10 ->
-Batch Loss: 0.06518
+Batch Loss: 0.08692
 Batch Accuracy: 96.875%
 
 Batch Index: 12 ->
-Batch Loss: 0.06777
+Batch Loss: 0.04657
 Batch Accuracy: 98.4375%
 
 Batch Index: 14 ->
-Batch Loss: 0.01719
+Batch Loss: 0.03183
 Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.05264
-Batch Accuracy: 98.4375%
+Batch Loss: 0.12230
+Batch Accuracy: 96.875%
 
 Batch Index: 18 ->
-Batch Loss: 0.05027
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03146
+Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.05167
-Batch Accuracy: 100.0%
+Batch Loss: 0.10073
+Batch Accuracy: 95.3125%
 
 Batch Index: 22 ->
-Batch Loss: 0.03577
-Batch Accuracy: 100.0%
+Batch Loss: 0.10258
+Batch Accuracy: 95.3125%
 
 Batch Index: 24 ->
-Batch Loss: 0.04798
-Batch Accuracy: 100.0%
+Batch Loss: 0.10927
+Batch Accuracy: 93.75%
 
 Batch Index: 26 ->
-Batch Loss: 0.17942
-Batch Accuracy: 95.3125%
+Batch Loss: 0.03024
+Batch Accuracy: 100.0%
 
 Batch Index: 28 ->
-Batch Loss: 0.03993
-Batch Accuracy: 100.0%
+Batch Loss: 0.03315
+Batch Accuracy: 98.4375%
 
 Batch Index: 30 ->
-Batch Loss: 0.05431
-Batch Accuracy: 98.4375%
-
-Batch Index: 32 ->
-Batch Loss: 0.04128
+Batch Loss: 0.04616
 Batch Accuracy: 100.0%
 
+Batch Index: 32 ->
+Batch Loss: 0.05608
+Batch Accuracy: 96.875%
+
 Batch Index: 34 ->
-Batch Loss: 0.04463
-Batch Accuracy: 98.4375%
+Batch Loss: 0.02710
+Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.11953
-Batch Accuracy: 95.3125%
+Batch Loss: 0.04002
+Batch Accuracy: 98.4375%
 
 Batch Index: 38 ->
-Batch Loss: 0.09786
+Batch Loss: 0.07808
 Batch Accuracy: 96.875%
 
 Batch Index: 40 ->
-Batch Loss: 0.05174
-Batch Accuracy: 100.0%
-
-Batch Index: 42 ->
-Batch Loss: 0.11611
+Batch Loss: 0.04401
 Batch Accuracy: 98.4375%
 
+Batch Index: 42 ->
+Batch Loss: 0.03100
+Batch Accuracy: 100.0%
+
 Batch Index: 44 ->
-Batch Loss: 0.05891
+Batch Loss: 0.03149
 Batch Accuracy: 98.4375%
 
 Batch Index: 46 ->
-Batch Loss: 0.08454
+Batch Loss: 0.03648
 Batch Accuracy: 98.4375%
 
 Batch Index: 48 ->
-Batch Loss: 0.03251
-Batch Accuracy: 100.0%
+Batch Loss: 0.04170
+Batch Accuracy: 98.4375%
 
 Batch Index: 50 ->
-Batch Loss: 0.08423
+Batch Loss: 0.03497
 Batch Accuracy: 98.4375%
 
 Batch Index: 52 ->
-Batch Loss: 0.05953
-Batch Accuracy: 98.4375%
-
-Batch Index: 54 ->
-Batch Loss: 0.01671
+Batch Loss: 0.02533
 Batch Accuracy: 100.0%
 
+Batch Index: 54 ->
+Batch Loss: 0.09720
+Batch Accuracy: 95.3125%
+
+Batch Index: 56 ->
+Batch Loss: 0.06007
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.02921
+Batch Accuracy: 100.0%
+
+Batch Index: 60 ->
+Batch Loss: 0.02010
+Batch Accuracy: 100.0%
+
+Batch Index: 62 ->
+Batch Loss: 0.07291
+Batch Accuracy: 95.3125%
+
+Batch Index: 64 ->
+Batch Loss: 0.01995
+Batch Accuracy: 100.0%
+
+Batch Index: 66 ->
+Batch Loss: 0.02779
+Batch Accuracy: 100.0%
+
+Batch Index: 68 ->
+Batch Loss: 0.04767
+Batch Accuracy: 100.0%
+
+Batch Index: 70 ->
+Batch Loss: 0.07661
+Batch Accuracy: 96.0%
+
 Epoch 13 Complete!
-Training Accuracy: 97.98387
-Validation Accuracy: 98.55832
+Training Accuracy: 98.67550
+Validation Accuracy: 99.59799
 
 Starting Training for Epoch Number 14:
 
 Batch Index: 0 ->
-Batch Loss: 0.08125
+Batch Loss: 0.07532
 Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.05514
-Batch Accuracy: 98.4375%
+Batch Loss: 0.05148
+Batch Accuracy: 96.875%
 
 Batch Index: 4 ->
-Batch Loss: 0.05059
+Batch Loss: 0.06767
 Batch Accuracy: 98.4375%
 
 Batch Index: 6 ->
-Batch Loss: 0.02984
-Batch Accuracy: 98.4375%
+Batch Loss: 0.07974
+Batch Accuracy: 96.875%
 
 Batch Index: 8 ->
-Batch Loss: 0.08961
+Batch Loss: 0.09257
 Batch Accuracy: 96.875%
 
 Batch Index: 10 ->
-Batch Loss: 0.07370
-Batch Accuracy: 96.875%
+Batch Loss: 0.02357
+Batch Accuracy: 100.0%
 
 Batch Index: 12 ->
-Batch Loss: 0.07043
-Batch Accuracy: 98.4375%
+Batch Loss: 0.02033
+Batch Accuracy: 100.0%
 
 Batch Index: 14 ->
-Batch Loss: 0.07934
-Batch Accuracy: 96.875%
+Batch Loss: 0.06036
+Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.04552
+Batch Loss: 0.04382
 Batch Accuracy: 98.4375%
 
 Batch Index: 18 ->
-Batch Loss: 0.06550
+Batch Loss: 0.05707
 Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.09586
-Batch Accuracy: 98.4375%
-
-Batch Index: 22 ->
-Batch Loss: 0.06366
-Batch Accuracy: 96.875%
-
-Batch Index: 24 ->
-Batch Loss: 0.03057
-Batch Accuracy: 98.4375%
-
-Batch Index: 26 ->
-Batch Loss: 0.12514
-Batch Accuracy: 93.75%
-
-Batch Index: 28 ->
-Batch Loss: 0.04778
-Batch Accuracy: 98.4375%
-
-Batch Index: 30 ->
-Batch Loss: 0.07927
+Batch Loss: 0.08550
 Batch Accuracy: 95.3125%
 
-Batch Index: 32 ->
-Batch Loss: 0.03495
+Batch Index: 22 ->
+Batch Loss: 0.03262
 Batch Accuracy: 100.0%
 
-Batch Index: 34 ->
-Batch Loss: 0.12217
+Batch Index: 24 ->
+Batch Loss: 0.04030
+Batch Accuracy: 100.0%
+
+Batch Index: 26 ->
+Batch Loss: 0.08742
 Batch Accuracy: 96.875%
+
+Batch Index: 28 ->
+Batch Loss: 0.02608
+Batch Accuracy: 100.0%
+
+Batch Index: 30 ->
+Batch Loss: 0.04187
+Batch Accuracy: 100.0%
+
+Batch Index: 32 ->
+Batch Loss: 0.08405
+Batch Accuracy: 96.875%
+
+Batch Index: 34 ->
+Batch Loss: 0.05846
+Batch Accuracy: 98.4375%
 
 Batch Index: 36 ->
-Batch Loss: 0.09762
-Batch Accuracy: 96.875%
+Batch Loss: 0.02942
+Batch Accuracy: 100.0%
 
 Batch Index: 38 ->
-Batch Loss: 0.07485
-Batch Accuracy: 96.875%
+Batch Loss: 0.04034
+Batch Accuracy: 98.4375%
 
 Batch Index: 40 ->
-Batch Loss: 0.06610
+Batch Loss: 0.05052
 Batch Accuracy: 98.4375%
 
 Batch Index: 42 ->
-Batch Loss: 0.03243
-Batch Accuracy: 98.4375%
+Batch Loss: 0.04122
+Batch Accuracy: 100.0%
 
 Batch Index: 44 ->
-Batch Loss: 0.07378
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01482
+Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.12476
-Batch Accuracy: 95.3125%
+Batch Loss: 0.11285
+Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.04552
+Batch Loss: 0.09401
 Batch Accuracy: 98.4375%
 
 Batch Index: 50 ->
-Batch Loss: 0.02715
-Batch Accuracy: 100.0%
+Batch Loss: 0.03333
+Batch Accuracy: 98.4375%
 
 Batch Index: 52 ->
-Batch Loss: 0.07000
+Batch Loss: 0.05276
 Batch Accuracy: 98.4375%
 
 Batch Index: 54 ->
-Batch Loss: 0.12833
-Batch Accuracy: 93.75%
+Batch Loss: 0.02832
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.06933
+Batch Accuracy: 96.875%
+
+Batch Index: 58 ->
+Batch Loss: 0.03105
+Batch Accuracy: 100.0%
+
+Batch Index: 60 ->
+Batch Loss: 0.07037
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.06119
+Batch Accuracy: 96.875%
+
+Batch Index: 64 ->
+Batch Loss: 0.02391
+Batch Accuracy: 100.0%
+
+Batch Index: 66 ->
+Batch Loss: 0.13239
+Batch Accuracy: 95.3125%
+
+Batch Index: 68 ->
+Batch Loss: 0.02991
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.13004
+Batch Accuracy: 96.0%
 
 Epoch 14 Complete!
-Training Accuracy: 97.60945
-Validation Accuracy: 99.47575
-
-NEW BEST MODEL SAVED - Validation Accuracy: 99.47575
+Training Accuracy: 98.27815
+Validation Accuracy: 99.49749
 
 Starting Training for Epoch Number 15:
 
 Batch Index: 0 ->
-Batch Loss: 0.04227
-Batch Accuracy: 100.0%
+Batch Loss: 0.07256
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.02515
-Batch Accuracy: 100.0%
+Batch Loss: 0.06095
+Batch Accuracy: 98.4375%
 
 Batch Index: 4 ->
-Batch Loss: 0.06737
+Batch Loss: 0.13114
 Batch Accuracy: 98.4375%
 
 Batch Index: 6 ->
-Batch Loss: 0.05071
+Batch Loss: 0.06470
 Batch Accuracy: 98.4375%
 
 Batch Index: 8 ->
-Batch Loss: 0.04336
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03995
+Batch Accuracy: 100.0%
 
 Batch Index: 10 ->
-Batch Loss: 0.03269
+Batch Loss: 0.10004
 Batch Accuracy: 98.4375%
 
 Batch Index: 12 ->
-Batch Loss: 0.13247
-Batch Accuracy: 96.875%
+Batch Loss: 0.00971
+Batch Accuracy: 100.0%
 
 Batch Index: 14 ->
-Batch Loss: 0.06137
-Batch Accuracy: 98.4375%
+Batch Loss: 0.05391
+Batch Accuracy: 96.875%
 
 Batch Index: 16 ->
-Batch Loss: 0.02942
+Batch Loss: 0.03628
 Batch Accuracy: 98.4375%
 
 Batch Index: 18 ->
-Batch Loss: 0.09032
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01008
+Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.02764
-Batch Accuracy: 100.0%
-
-Batch Index: 22 ->
-Batch Loss: 0.07549
-Batch Accuracy: 96.875%
-
-Batch Index: 24 ->
-Batch Loss: 0.03754
-Batch Accuracy: 100.0%
-
-Batch Index: 26 ->
-Batch Loss: 0.02651
-Batch Accuracy: 100.0%
-
-Batch Index: 28 ->
-Batch Loss: 0.05573
+Batch Loss: 0.07661
 Batch Accuracy: 98.4375%
 
+Batch Index: 22 ->
+Batch Loss: 0.10607
+Batch Accuracy: 95.3125%
+
+Batch Index: 24 ->
+Batch Loss: 0.10556
+Batch Accuracy: 98.4375%
+
+Batch Index: 26 ->
+Batch Loss: 0.03385
+Batch Accuracy: 98.4375%
+
+Batch Index: 28 ->
+Batch Loss: 0.02137
+Batch Accuracy: 100.0%
+
 Batch Index: 30 ->
-Batch Loss: 0.02593
+Batch Loss: 0.01850
 Batch Accuracy: 100.0%
 
 Batch Index: 32 ->
-Batch Loss: 0.08613
-Batch Accuracy: 98.4375%
+Batch Loss: 0.05325
+Batch Accuracy: 96.875%
 
 Batch Index: 34 ->
-Batch Loss: 0.04908
+Batch Loss: 0.03417
 Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.06583
-Batch Accuracy: 96.875%
-
-Batch Index: 38 ->
-Batch Loss: 0.04874
+Batch Loss: 0.02363
 Batch Accuracy: 100.0%
 
+Batch Index: 38 ->
+Batch Loss: 0.05805
+Batch Accuracy: 98.4375%
+
 Batch Index: 40 ->
-Batch Loss: 0.01734
+Batch Loss: 0.03523
 Batch Accuracy: 100.0%
 
 Batch Index: 42 ->
-Batch Loss: 0.01384
-Batch Accuracy: 100.0%
+Batch Loss: 0.05573
+Batch Accuracy: 96.875%
 
 Batch Index: 44 ->
-Batch Loss: 0.06629
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03479
+Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.04420
-Batch Accuracy: 100.0%
+Batch Loss: 0.07599
+Batch Accuracy: 96.875%
 
 Batch Index: 48 ->
-Batch Loss: 0.06793
-Batch Accuracy: 98.4375%
+Batch Loss: 0.12474
+Batch Accuracy: 92.1875%
 
 Batch Index: 50 ->
-Batch Loss: 0.01871
-Batch Accuracy: 100.0%
+Batch Loss: 0.10619
+Batch Accuracy: 95.3125%
 
 Batch Index: 52 ->
-Batch Loss: 0.03371
-Batch Accuracy: 100.0%
+Batch Loss: 0.08219
+Batch Accuracy: 96.875%
 
 Batch Index: 54 ->
-Batch Loss: 0.10201
-Batch Accuracy: 93.75%
+Batch Loss: 0.03300
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.06113
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.08298
+Batch Accuracy: 98.4375%
+
+Batch Index: 60 ->
+Batch Loss: 0.09350
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.09235
+Batch Accuracy: 95.3125%
+
+Batch Index: 64 ->
+Batch Loss: 0.05286
+Batch Accuracy: 98.4375%
+
+Batch Index: 66 ->
+Batch Loss: 0.04539
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.03252
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.02868
+Batch Accuracy: 100.0%
 
 Epoch 15 Complete!
-Training Accuracy: 98.61751
-Validation Accuracy: 99.86894
-
-NEW BEST MODEL SAVED - Validation Accuracy: 99.86894
+Training Accuracy: 97.68212
+Validation Accuracy: 99.69849
 
 Starting Training for Epoch Number 16:
 
 Batch Index: 0 ->
-Batch Loss: 0.03854
-Batch Accuracy: 100.0%
+Batch Loss: 0.06051
+Batch Accuracy: 98.4375%
 
 Batch Index: 2 ->
-Batch Loss: 0.05244
+Batch Loss: 0.05393
 Batch Accuracy: 98.4375%
 
 Batch Index: 4 ->
-Batch Loss: 0.05412
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09626
+Batch Accuracy: 96.875%
 
 Batch Index: 6 ->
-Batch Loss: 0.04030
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01354
+Batch Accuracy: 100.0%
 
 Batch Index: 8 ->
-Batch Loss: 0.02850
+Batch Loss: 0.02613
 Batch Accuracy: 100.0%
 
 Batch Index: 10 ->
-Batch Loss: 0.01284
-Batch Accuracy: 100.0%
+Batch Loss: 0.08067
+Batch Accuracy: 96.875%
 
 Batch Index: 12 ->
-Batch Loss: 0.06530
-Batch Accuracy: 98.4375%
-
-Batch Index: 14 ->
-Batch Loss: 0.11692
-Batch Accuracy: 95.3125%
-
-Batch Index: 16 ->
-Batch Loss: 0.01780
+Batch Loss: 0.03545
 Batch Accuracy: 100.0%
 
+Batch Index: 14 ->
+Batch Loss: 0.03899
+Batch Accuracy: 98.4375%
+
+Batch Index: 16 ->
+Batch Loss: 0.05331
+Batch Accuracy: 98.4375%
+
 Batch Index: 18 ->
-Batch Loss: 0.07298
+Batch Loss: 0.05760
 Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.04649
-Batch Accuracy: 98.4375%
+Batch Loss: 0.02557
+Batch Accuracy: 100.0%
 
 Batch Index: 22 ->
-Batch Loss: 0.05058
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03894
+Batch Accuracy: 100.0%
 
 Batch Index: 24 ->
-Batch Loss: 0.05758
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01873
+Batch Accuracy: 100.0%
 
 Batch Index: 26 ->
-Batch Loss: 0.05327
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03564
+Batch Accuracy: 100.0%
 
 Batch Index: 28 ->
-Batch Loss: 0.03818
-Batch Accuracy: 98.4375%
+Batch Loss: 0.07799
+Batch Accuracy: 96.875%
 
 Batch Index: 30 ->
-Batch Loss: 0.09421
-Batch Accuracy: 98.4375%
+Batch Loss: 0.04919
+Batch Accuracy: 100.0%
 
 Batch Index: 32 ->
-Batch Loss: 0.08783
+Batch Loss: 0.08588
 Batch Accuracy: 96.875%
 
 Batch Index: 34 ->
-Batch Loss: 0.01153
-Batch Accuracy: 100.0%
-
-Batch Index: 36 ->
-Batch Loss: 0.09395
-Batch Accuracy: 98.4375%
-
-Batch Index: 38 ->
-Batch Loss: 0.06532
-Batch Accuracy: 98.4375%
-
-Batch Index: 40 ->
-Batch Loss: 0.10981
+Batch Loss: 0.07294
 Batch Accuracy: 95.3125%
 
+Batch Index: 36 ->
+Batch Loss: 0.12438
+Batch Accuracy: 95.3125%
+
+Batch Index: 38 ->
+Batch Loss: 0.03947
+Batch Accuracy: 100.0%
+
+Batch Index: 40 ->
+Batch Loss: 0.12233
+Batch Accuracy: 96.875%
+
 Batch Index: 42 ->
-Batch Loss: 0.02716
+Batch Loss: 0.01351
 Batch Accuracy: 100.0%
 
 Batch Index: 44 ->
-Batch Loss: 0.11170
-Batch Accuracy: 93.75%
+Batch Loss: 0.02652
+Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.04924
-Batch Accuracy: 96.875%
+Batch Loss: 0.09377
+Batch Accuracy: 95.3125%
 
 Batch Index: 48 ->
-Batch Loss: 0.04643
-Batch Accuracy: 98.4375%
+Batch Loss: 0.09309
+Batch Accuracy: 95.3125%
 
 Batch Index: 50 ->
-Batch Loss: 0.09037
+Batch Loss: 0.04357
 Batch Accuracy: 98.4375%
 
 Batch Index: 52 ->
-Batch Loss: 0.04721
+Batch Loss: 0.04918
 Batch Accuracy: 98.4375%
 
 Batch Index: 54 ->
-Batch Loss: 0.08630
-Batch Accuracy: 93.75%
+Batch Loss: 0.01638
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.08398
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.02537
+Batch Accuracy: 98.4375%
+
+Batch Index: 60 ->
+Batch Loss: 0.03687
+Batch Accuracy: 100.0%
+
+Batch Index: 62 ->
+Batch Loss: 0.01762
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.05085
+Batch Accuracy: 98.4375%
+
+Batch Index: 66 ->
+Batch Loss: 0.03903
+Batch Accuracy: 98.4375%
+
+Batch Index: 68 ->
+Batch Loss: 0.04650
+Batch Accuracy: 96.875%
+
+Batch Index: 70 ->
+Batch Loss: 0.03796
+Batch Accuracy: 98.0%
 
 Epoch 16 Complete!
-Training Accuracy: 98.38710
-Validation Accuracy: 99.08257
+Training Accuracy: 98.38852
+Validation Accuracy: 99.79899
+
+NEW BEST MODEL SAVED - Validation Accuracy: 99.79899
 
 Starting Training for Epoch Number 17:
 
 Batch Index: 0 ->
-Batch Loss: 0.04504
-Batch Accuracy: 98.4375%
+Batch Loss: 0.11398
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.12839
-Batch Accuracy: 93.75%
+Batch Loss: 0.02738
+Batch Accuracy: 98.4375%
 
 Batch Index: 4 ->
-Batch Loss: 0.03395
+Batch Loss: 0.03971
 Batch Accuracy: 98.4375%
 
 Batch Index: 6 ->
-Batch Loss: 0.09208
-Batch Accuracy: 98.4375%
+Batch Loss: 0.14667
+Batch Accuracy: 93.75%
 
 Batch Index: 8 ->
-Batch Loss: 0.01682
+Batch Loss: 0.01917
 Batch Accuracy: 100.0%
 
 Batch Index: 10 ->
-Batch Loss: 0.07733
+Batch Loss: 0.05846
 Batch Accuracy: 98.4375%
 
 Batch Index: 12 ->
-Batch Loss: 0.05188
-Batch Accuracy: 98.4375%
+Batch Loss: 0.11466
+Batch Accuracy: 95.3125%
 
 Batch Index: 14 ->
-Batch Loss: 0.05568
-Batch Accuracy: 100.0%
-
-Batch Index: 16 ->
-Batch Loss: 0.09070
+Batch Loss: 0.03508
 Batch Accuracy: 98.4375%
 
+Batch Index: 16 ->
+Batch Loss: 0.02903
+Batch Accuracy: 100.0%
+
 Batch Index: 18 ->
-Batch Loss: 0.06974
-Batch Accuracy: 96.875%
+Batch Loss: 0.02891
+Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.04477
+Batch Loss: 0.04417
 Batch Accuracy: 98.4375%
 
 Batch Index: 22 ->
-Batch Loss: 0.08579
+Batch Loss: 0.06374
 Batch Accuracy: 98.4375%
 
 Batch Index: 24 ->
-Batch Loss: 0.03964
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01131
+Batch Accuracy: 100.0%
 
 Batch Index: 26 ->
-Batch Loss: 0.08392
+Batch Loss: 0.06692
 Batch Accuracy: 96.875%
 
 Batch Index: 28 ->
-Batch Loss: 0.05560
-Batch Accuracy: 98.4375%
-
-Batch Index: 30 ->
-Batch Loss: 0.03385
+Batch Loss: 0.04703
 Batch Accuracy: 100.0%
 
-Batch Index: 32 ->
-Batch Loss: 0.10623
-Batch Accuracy: 93.75%
-
-Batch Index: 34 ->
-Batch Loss: 0.02482
+Batch Index: 30 ->
+Batch Loss: 0.08193
 Batch Accuracy: 98.4375%
 
+Batch Index: 32 ->
+Batch Loss: 0.05799
+Batch Accuracy: 98.4375%
+
+Batch Index: 34 ->
+Batch Loss: 0.03953
+Batch Accuracy: 100.0%
+
 Batch Index: 36 ->
-Batch Loss: 0.01862
+Batch Loss: 0.01739
 Batch Accuracy: 100.0%
 
 Batch Index: 38 ->
-Batch Loss: 0.05433
+Batch Loss: 0.00977
 Batch Accuracy: 100.0%
 
 Batch Index: 40 ->
-Batch Loss: 0.02984
+Batch Loss: 0.01481
 Batch Accuracy: 100.0%
 
 Batch Index: 42 ->
-Batch Loss: 0.14020
-Batch Accuracy: 93.75%
+Batch Loss: 0.08368
+Batch Accuracy: 98.4375%
 
 Batch Index: 44 ->
-Batch Loss: 0.09929
-Batch Accuracy: 96.875%
+Batch Loss: 0.04080
+Batch Accuracy: 98.4375%
 
 Batch Index: 46 ->
-Batch Loss: 0.04997
+Batch Loss: 0.07116
 Batch Accuracy: 98.4375%
 
 Batch Index: 48 ->
-Batch Loss: 0.11147
-Batch Accuracy: 96.875%
+Batch Loss: 0.08686
+Batch Accuracy: 95.3125%
 
 Batch Index: 50 ->
-Batch Loss: 0.07304
-Batch Accuracy: 96.875%
+Batch Loss: 0.07365
+Batch Accuracy: 98.4375%
 
 Batch Index: 52 ->
-Batch Loss: 0.01914
-Batch Accuracy: 100.0%
+Batch Loss: 0.02629
+Batch Accuracy: 98.4375%
 
 Batch Index: 54 ->
-Batch Loss: 0.05212
+Batch Loss: 0.02668
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.01365
+Batch Accuracy: 100.0%
+
+Batch Index: 58 ->
+Batch Loss: 0.04438
+Batch Accuracy: 96.875%
+
+Batch Index: 60 ->
+Batch Loss: 0.03774
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.02697
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.13617
+Batch Accuracy: 95.3125%
+
+Batch Index: 66 ->
+Batch Loss: 0.05999
+Batch Accuracy: 98.4375%
+
+Batch Index: 68 ->
+Batch Loss: 0.02597
+Batch Accuracy: 100.0%
+
+Batch Index: 70 ->
+Batch Loss: 0.02053
 Batch Accuracy: 100.0%
 
 Epoch 17 Complete!
-Training Accuracy: 98.24309
-Validation Accuracy: 99.34469
+Training Accuracy: 98.63135
+Validation Accuracy: 99.69849
 
 Starting Training for Epoch Number 18:
 
 Batch Index: 0 ->
-Batch Loss: 0.03390
+Batch Loss: 0.01656
 Batch Accuracy: 100.0%
 
 Batch Index: 2 ->
-Batch Loss: 0.01535
-Batch Accuracy: 100.0%
+Batch Loss: 0.05218
+Batch Accuracy: 98.4375%
 
 Batch Index: 4 ->
-Batch Loss: 0.09459
-Batch Accuracy: 96.875%
+Batch Loss: 0.03906
+Batch Accuracy: 98.4375%
 
 Batch Index: 6 ->
-Batch Loss: 0.07992
-Batch Accuracy: 96.875%
+Batch Loss: 0.05613
+Batch Accuracy: 95.3125%
 
 Batch Index: 8 ->
-Batch Loss: 0.04563
+Batch Loss: 0.03273
 Batch Accuracy: 98.4375%
 
 Batch Index: 10 ->
-Batch Loss: 0.02870
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01129
+Batch Accuracy: 100.0%
 
 Batch Index: 12 ->
-Batch Loss: 0.17958
-Batch Accuracy: 95.3125%
+Batch Loss: 0.03548
+Batch Accuracy: 100.0%
 
 Batch Index: 14 ->
-Batch Loss: 0.05779
-Batch Accuracy: 98.4375%
+Batch Loss: 0.02273
+Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.03928
-Batch Accuracy: 98.4375%
+Batch Loss: 0.10164
+Batch Accuracy: 96.875%
 
 Batch Index: 18 ->
-Batch Loss: 0.01942
-Batch Accuracy: 100.0%
+Batch Loss: 0.05425
+Batch Accuracy: 96.875%
 
 Batch Index: 20 ->
-Batch Loss: 0.04554
-Batch Accuracy: 98.4375%
-
-Batch Index: 22 ->
-Batch Loss: 0.01279
+Batch Loss: 0.00916
 Batch Accuracy: 100.0%
 
+Batch Index: 22 ->
+Batch Loss: 0.04822
+Batch Accuracy: 98.4375%
+
 Batch Index: 24 ->
-Batch Loss: 0.01859
+Batch Loss: 0.02232
 Batch Accuracy: 100.0%
 
 Batch Index: 26 ->
-Batch Loss: 0.02889
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03119
+Batch Accuracy: 100.0%
 
 Batch Index: 28 ->
-Batch Loss: 0.09470
-Batch Accuracy: 93.75%
+Batch Loss: 0.02052
+Batch Accuracy: 100.0%
 
 Batch Index: 30 ->
-Batch Loss: 0.02987
+Batch Loss: 0.04576
 Batch Accuracy: 100.0%
 
 Batch Index: 32 ->
-Batch Loss: 0.06082
-Batch Accuracy: 98.4375%
+Batch Loss: 0.08383
+Batch Accuracy: 96.875%
 
 Batch Index: 34 ->
-Batch Loss: 0.07784
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01761
+Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.03139
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01504
+Batch Accuracy: 100.0%
 
 Batch Index: 38 ->
-Batch Loss: 0.04274
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01171
+Batch Accuracy: 100.0%
 
 Batch Index: 40 ->
-Batch Loss: 0.01119
+Batch Loss: 0.01867
 Batch Accuracy: 100.0%
 
 Batch Index: 42 ->
-Batch Loss: 0.03160
+Batch Loss: 0.03489
 Batch Accuracy: 100.0%
 
 Batch Index: 44 ->
-Batch Loss: 0.05721
-Batch Accuracy: 96.875%
+Batch Loss: 0.01203
+Batch Accuracy: 100.0%
 
 Batch Index: 46 ->
-Batch Loss: 0.11445
-Batch Accuracy: 95.3125%
+Batch Loss: 0.01509
+Batch Accuracy: 100.0%
 
 Batch Index: 48 ->
-Batch Loss: 0.06542
+Batch Loss: 0.06470
 Batch Accuracy: 96.875%
 
 Batch Index: 50 ->
-Batch Loss: 0.03853
-Batch Accuracy: 100.0%
+Batch Loss: 0.12537
+Batch Accuracy: 95.3125%
 
 Batch Index: 52 ->
-Batch Loss: 0.03112
-Batch Accuracy: 100.0%
+Batch Loss: 0.03970
+Batch Accuracy: 98.4375%
 
 Batch Index: 54 ->
-Batch Loss: 0.03217
+Batch Loss: 0.03420
+Batch Accuracy: 98.4375%
+
+Batch Index: 56 ->
+Batch Loss: 0.01902
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.15297
+Batch Accuracy: 95.3125%
+
+Batch Index: 60 ->
+Batch Loss: 0.00978
+Batch Accuracy: 100.0%
+
+Batch Index: 62 ->
+Batch Loss: 0.01499
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.09689
+Batch Accuracy: 95.3125%
+
+Batch Index: 66 ->
+Batch Loss: 0.08362
+Batch Accuracy: 95.3125%
+
+Batch Index: 68 ->
+Batch Loss: 0.03638
+Batch Accuracy: 98.4375%
+
+Batch Index: 70 ->
+Batch Loss: 0.02292
 Batch Accuracy: 100.0%
 
 Epoch 18 Complete!
-Training Accuracy: 98.41590
-Validation Accuracy: 99.08257
+Training Accuracy: 98.69757
+Validation Accuracy: 99.79899
 
 Starting Training for Epoch Number 19:
 
 Batch Index: 0 ->
-Batch Loss: 0.05315
-Batch Accuracy: 98.4375%
+Batch Loss: 0.05988
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.04050
-Batch Accuracy: 96.875%
-
-Batch Index: 4 ->
-Batch Loss: 0.09103
-Batch Accuracy: 93.75%
-
-Batch Index: 6 ->
-Batch Loss: 0.09812
-Batch Accuracy: 96.875%
-
-Batch Index: 8 ->
-Batch Loss: 0.03092
-Batch Accuracy: 98.4375%
-
-Batch Index: 10 ->
-Batch Loss: 0.03833
+Batch Loss: 0.00605
 Batch Accuracy: 100.0%
 
+Batch Index: 4 ->
+Batch Loss: 0.00937
+Batch Accuracy: 100.0%
+
+Batch Index: 6 ->
+Batch Loss: 0.01554
+Batch Accuracy: 100.0%
+
+Batch Index: 8 ->
+Batch Loss: 0.02201
+Batch Accuracy: 100.0%
+
+Batch Index: 10 ->
+Batch Loss: 0.02122
+Batch Accuracy: 98.4375%
+
 Batch Index: 12 ->
-Batch Loss: 0.03892
+Batch Loss: 0.06432
 Batch Accuracy: 98.4375%
 
 Batch Index: 14 ->
-Batch Loss: 0.03880
+Batch Loss: 0.01984
 Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.07928
-Batch Accuracy: 96.875%
+Batch Loss: 0.03798
+Batch Accuracy: 100.0%
 
 Batch Index: 18 ->
-Batch Loss: 0.01357
+Batch Loss: 0.02208
 Batch Accuracy: 100.0%
 
 Batch Index: 20 ->
-Batch Loss: 0.03564
-Batch Accuracy: 98.4375%
+Batch Loss: 0.03114
+Batch Accuracy: 100.0%
 
 Batch Index: 22 ->
-Batch Loss: 0.01089
+Batch Loss: 0.03587
 Batch Accuracy: 100.0%
 
 Batch Index: 24 ->
-Batch Loss: 0.04604
+Batch Loss: 0.09802
 Batch Accuracy: 98.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.02960
+Batch Loss: 0.03964
 Batch Accuracy: 100.0%
 
 Batch Index: 28 ->
-Batch Loss: 0.01488
-Batch Accuracy: 100.0%
+Batch Loss: 0.05733
+Batch Accuracy: 98.4375%
 
 Batch Index: 30 ->
-Batch Loss: 0.00913
-Batch Accuracy: 100.0%
+Batch Loss: 0.03461
+Batch Accuracy: 98.4375%
 
 Batch Index: 32 ->
-Batch Loss: 0.07157
-Batch Accuracy: 96.875%
+Batch Loss: 0.02297
+Batch Accuracy: 100.0%
 
 Batch Index: 34 ->
-Batch Loss: 0.04701
+Batch Loss: 0.04172
 Batch Accuracy: 98.4375%
 
 Batch Index: 36 ->
-Batch Loss: 0.04732
-Batch Accuracy: 96.875%
-
-Batch Index: 38 ->
-Batch Loss: 0.04081
-Batch Accuracy: 98.4375%
-
-Batch Index: 40 ->
-Batch Loss: 0.11653
-Batch Accuracy: 96.875%
-
-Batch Index: 42 ->
-Batch Loss: 0.05250
-Batch Accuracy: 96.875%
-
-Batch Index: 44 ->
-Batch Loss: 0.01337
+Batch Loss: 0.01817
 Batch Accuracy: 100.0%
 
+Batch Index: 38 ->
+Batch Loss: 0.03269
+Batch Accuracy: 100.0%
+
+Batch Index: 40 ->
+Batch Loss: 0.02166
+Batch Accuracy: 100.0%
+
+Batch Index: 42 ->
+Batch Loss: 0.03797
+Batch Accuracy: 98.4375%
+
+Batch Index: 44 ->
+Batch Loss: 0.14457
+Batch Accuracy: 96.875%
+
 Batch Index: 46 ->
-Batch Loss: 0.02172
+Batch Loss: 0.01920
 Batch Accuracy: 100.0%
 
 Batch Index: 48 ->
-Batch Loss: 0.15897
-Batch Accuracy: 90.625%
-
-Batch Index: 50 ->
-Batch Loss: 0.10348
+Batch Loss: 0.05542
 Batch Accuracy: 96.875%
 
+Batch Index: 50 ->
+Batch Loss: 0.02356
+Batch Accuracy: 100.0%
+
 Batch Index: 52 ->
-Batch Loss: 0.04540
-Batch Accuracy: 98.4375%
+Batch Loss: 0.12508
+Batch Accuracy: 95.3125%
 
 Batch Index: 54 ->
-Batch Loss: 0.18423
-Batch Accuracy: 93.75%
+Batch Loss: 0.00984
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.05014
+Batch Accuracy: 98.4375%
+
+Batch Index: 58 ->
+Batch Loss: 0.01234
+Batch Accuracy: 100.0%
+
+Batch Index: 60 ->
+Batch Loss: 0.04213
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.02912
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.02015
+Batch Accuracy: 100.0%
+
+Batch Index: 66 ->
+Batch Loss: 0.03506
+Batch Accuracy: 98.4375%
+
+Batch Index: 68 ->
+Batch Loss: 0.01665
+Batch Accuracy: 100.0%
+
+Batch Index: 70 ->
+Batch Loss: 0.00426
+Batch Accuracy: 100.0%
 
 Epoch 19 Complete!
-Training Accuracy: 98.38710
-Validation Accuracy: 99.08257
+Training Accuracy: 98.98455
+Validation Accuracy: 99.59799
 
 Starting Training for Epoch Number 20:
 
 Batch Index: 0 ->
-Batch Loss: 0.06586
-Batch Accuracy: 98.4375%
+Batch Loss: 0.07167
+Batch Accuracy: 96.875%
 
 Batch Index: 2 ->
-Batch Loss: 0.02692
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01050
+Batch Accuracy: 100.0%
 
 Batch Index: 4 ->
-Batch Loss: 0.11191
-Batch Accuracy: 95.3125%
+Batch Loss: 0.01720
+Batch Accuracy: 100.0%
 
 Batch Index: 6 ->
-Batch Loss: 0.07445
-Batch Accuracy: 96.875%
+Batch Loss: 0.02403
+Batch Accuracy: 98.4375%
 
 Batch Index: 8 ->
-Batch Loss: 0.11457
-Batch Accuracy: 96.875%
+Batch Loss: 0.01630
+Batch Accuracy: 100.0%
 
 Batch Index: 10 ->
-Batch Loss: 0.10128
-Batch Accuracy: 96.875%
+Batch Loss: 0.06574
+Batch Accuracy: 98.4375%
 
 Batch Index: 12 ->
-Batch Loss: 0.06775
+Batch Loss: 0.06196
 Batch Accuracy: 96.875%
 
 Batch Index: 14 ->
-Batch Loss: 0.04991
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01051
+Batch Accuracy: 100.0%
 
 Batch Index: 16 ->
-Batch Loss: 0.03918
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01403
+Batch Accuracy: 100.0%
 
 Batch Index: 18 ->
-Batch Loss: 0.05969
-Batch Accuracy: 96.875%
-
-Batch Index: 20 ->
-Batch Loss: 0.03304
+Batch Loss: 0.06020
 Batch Accuracy: 98.4375%
 
+Batch Index: 20 ->
+Batch Loss: 0.01087
+Batch Accuracy: 100.0%
+
 Batch Index: 22 ->
-Batch Loss: 0.06186
+Batch Loss: 0.04869
 Batch Accuracy: 98.4375%
 
 Batch Index: 24 ->
-Batch Loss: 0.03974
+Batch Loss: 0.03645
 Batch Accuracy: 98.4375%
 
 Batch Index: 26 ->
-Batch Loss: 0.13763
-Batch Accuracy: 93.75%
+Batch Loss: 0.04926
+Batch Accuracy: 98.4375%
 
 Batch Index: 28 ->
-Batch Loss: 0.04843
+Batch Loss: 0.04782
 Batch Accuracy: 98.4375%
 
 Batch Index: 30 ->
-Batch Loss: 0.02433
-Batch Accuracy: 100.0%
-
-Batch Index: 32 ->
-Batch Loss: 0.05461
+Batch Loss: 0.09925
 Batch Accuracy: 96.875%
 
+Batch Index: 32 ->
+Batch Loss: 0.03088
+Batch Accuracy: 100.0%
+
 Batch Index: 34 ->
-Batch Loss: 0.06269
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01289
+Batch Accuracy: 100.0%
 
 Batch Index: 36 ->
-Batch Loss: 0.13131
-Batch Accuracy: 93.75%
+Batch Loss: 0.02044
+Batch Accuracy: 100.0%
 
 Batch Index: 38 ->
-Batch Loss: 0.01405
-Batch Accuracy: 100.0%
+Batch Loss: 0.04202
+Batch Accuracy: 98.4375%
 
 Batch Index: 40 ->
-Batch Loss: 0.05581
-Batch Accuracy: 98.4375%
-
-Batch Index: 42 ->
-Batch Loss: 0.05959
-Batch Accuracy: 95.3125%
-
-Batch Index: 44 ->
-Batch Loss: 0.02896
-Batch Accuracy: 98.4375%
-
-Batch Index: 46 ->
-Batch Loss: 0.02026
+Batch Loss: 0.00970
 Batch Accuracy: 100.0%
 
+Batch Index: 42 ->
+Batch Loss: 0.03899
+Batch Accuracy: 100.0%
+
+Batch Index: 44 ->
+Batch Loss: 0.01110
+Batch Accuracy: 100.0%
+
+Batch Index: 46 ->
+Batch Loss: 0.06273
+Batch Accuracy: 96.875%
+
 Batch Index: 48 ->
-Batch Loss: 0.01943
+Batch Loss: 0.01059
 Batch Accuracy: 100.0%
 
 Batch Index: 50 ->
-Batch Loss: 0.04375
+Batch Loss: 0.02729
 Batch Accuracy: 98.4375%
 
 Batch Index: 52 ->
-Batch Loss: 0.06679
-Batch Accuracy: 98.4375%
+Batch Loss: 0.01164
+Batch Accuracy: 100.0%
 
 Batch Index: 54 ->
-Batch Loss: 0.04750
-Batch Accuracy: 93.75%
+Batch Loss: 0.01980
+Batch Accuracy: 100.0%
+
+Batch Index: 56 ->
+Batch Loss: 0.07975
+Batch Accuracy: 96.875%
+
+Batch Index: 58 ->
+Batch Loss: 0.05814
+Batch Accuracy: 96.875%
+
+Batch Index: 60 ->
+Batch Loss: 0.03932
+Batch Accuracy: 98.4375%
+
+Batch Index: 62 ->
+Batch Loss: 0.01506
+Batch Accuracy: 100.0%
+
+Batch Index: 64 ->
+Batch Loss: 0.01102
+Batch Accuracy: 100.0%
+
+Batch Index: 66 ->
+Batch Loss: 0.04264
+Batch Accuracy: 96.875%
+
+Batch Index: 68 ->
+Batch Loss: 0.03011
+Batch Accuracy: 100.0%
+
+Batch Index: 70 ->
+Batch Loss: 0.02482
+Batch Accuracy: 98.0%
 
 Epoch 20 Complete!
-Training Accuracy: 98.01267
-Validation Accuracy: 99.60682
+Training Accuracy: 98.94040
+Validation Accuracy: 99.59799
 
 ============================================================
 TRAINING COMPLETE!
 ============================================================
-Best Validation Accuracy: 99.869%
-Best Epoch: 15
+Best Validation Accuracy: 99.799%
+Best Epoch: 16
 Model saved to: /Users/arushhanda/Desktop/Project_asphalt_hand_control_CNN/models/gesture_cnn_best.pth
 
 Training Summary:
 
        Training Losses  ...  Validation Accuracies
 Epoch                   ...                       
-0             0.897067  ...              94.888598
-1             0.352458  ...              97.378768
-2             0.228932  ...              99.344692
-3             0.173852  ...              99.213630
-4             0.144581  ...              97.903014
-5             0.134607  ...              98.296199
-6             0.111728  ...              99.344692
-7             0.083573  ...              99.082569
-8             0.082936  ...              98.951507
-9             0.095405  ...              97.509830
-10            0.081400  ...              98.558322
-11            0.076081  ...              98.034076
-12            0.075190  ...              98.558322
-13            0.073344  ...              99.475754
-14            0.051889  ...              99.868938
-15            0.054236  ...              99.082569
-16            0.058328  ...              99.344692
-17            0.051215  ...              99.082569
-18            0.050967  ...              99.082569
-19            0.059698  ...              99.606815
+0             0.772507  ...              93.366834
+1             0.329759  ...              96.783920
+2             0.211675  ...              98.190955
+3             0.166427  ...              99.497487
+4             0.133051  ...              99.597990
+5             0.118466  ...              99.698492
+6             0.107586  ...              99.396985
+7             0.097125  ...              99.497487
+8             0.078667  ...              99.597990
+9             0.075935  ...              99.698492
+10            0.077010  ...              99.396985
+11            0.068279  ...              99.597990
+12            0.050757  ...              99.597990
+13            0.055253  ...              99.497487
+14            0.071576  ...              99.698492
+15            0.052659  ...              99.798995
+16            0.048007  ...              99.698492
+17            0.041982  ...              99.798995
+18            0.038488  ...              99.597990
+19            0.034834  ...              99.597990
 
 [20 rows x 4 columns]
 
