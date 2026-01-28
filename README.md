@@ -218,15 +218,6 @@ display:
 - **matplotlib**: Visualization
 - **pandas**: Data analysis
 
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -236,5 +227,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Arush Handa**
 - GitHub: [@arush-3009](https://github.com/arush-3009)
 - LinkedIn: [Arush Handa](https://www.linkedin.com/in/arush-handa-30b6a7241/)
-- Email: a4handa@uwaterloo.ca
+- Email: arush.handa@uwaterloo.ca
 
