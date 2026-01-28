@@ -1,4 +1,4 @@
-# Hand Gesture Game Control using a custom CNN built from scratch with a custom dataset
+# Hand Gesture Game Control using a custom CNN with a custom dataset
 
 Real-time hand gesture recognition system for controlling racing games using deep learning and computer vision.
 
